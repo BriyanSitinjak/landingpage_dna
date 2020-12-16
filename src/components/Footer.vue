@@ -57,11 +57,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id et egestas dui liber
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="copyright-section">
-                        <p>Copyright  ©  2020 Digital Native Agency</p>
-                    </div> -->
             </v-row>
         </v-col>
+        <div class="copyright-section">
+            <p>Copyright  ©  2020 Digital Native Agency</p>
+        </div>
     </v-footer>
 </template>
 
@@ -180,18 +180,16 @@ export default {
     width: 298px;
 }
 
-/* .copyright-section {
-    width: 339px;
-    height: 22px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FFFFFF;
-} */
-
 .content-last-footer-section {
     margin-left: 30px;
     margin-top: 20px;
+}
+
+.copyright-section {
+    position: absolute;
+    margin: 420px 300px 0px 425px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-style: normal;
 }
 </style>

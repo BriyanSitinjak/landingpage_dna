@@ -2,19 +2,20 @@
   <div>
     <div>
       <!-- <router-link to="/">Home</router-link> 
-      <router-link to="/about">About</router-link> -->
+      <router-link to="/service">Service</router-link> -->
       <!-- <Sidebar/> -->
       <!-- <Footer/> -->
-      <HomeDNA />
+      <!-- <Home /> -->
+      <router-view/>
     </div>
-    <!-- <router-view/> -->
   </div>
 </template>
 
 <script>
 // import Sidebar from '@/components/Sidebar.vue'
 // import Footer from '@/components/Footer.vue'
-import HomeDNA from '@/views/HomeDNA.vue'
+// import Home from '@/views/Home.vue'
+// import Service from '@views/Service.vue'
 
 
 export default {
@@ -22,7 +23,8 @@ export default {
   components: {
     // Sidebar
     // Footer
-    HomeDNA
+    // Home,
+    // Service
   },
   data(){
     return {

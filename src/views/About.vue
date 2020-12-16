@@ -3,9 +3,9 @@
         <img src="../assets/images/cover_bg_service.png" class="bg-service-bar">
         <div class="main-service-container">
             <div class="main-service-content">
-                 <h1>We bring your dream
-                     <br> 
-                     <span>into reality</span></h1>
+                <h1>We bring your dream
+                <br> 
+                <span>into reality</span></h1>
             </div>
         </div>
         <div class="menu-bar-container">
@@ -49,62 +49,10 @@
                 <img src="../assets/logo/logo_create.png" class="img-create">
             </div>
         </div>
-        <div class="menu-footer-service">
-            <div class="footer-content">
-                <div class="first-content">
-                    <h5 class="footer-title">DIGITAL NATIVE AGENCY</h5>
-                    <p class="footer-text-content-one">You have an idea, we make it comes true</p>
-                    <p class="footer-text-content-two">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id et egestas dui libero et eget neque. Consequat fusce justo, diam sed. Scelerisque mus vitae varius ut non volutpat mattis eleifend proin. Turpis eget odio lectus nunc imperdiet. Vitae convallis commodo dui sollicitudin viverra congue. Quis gravida tincidunt sed quis ultrices habitasse.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id et egestas dui libero et eget neque. Consequat fusce justo, diam sed. Scelerisque mus vitae varius ut non volutpat mattis eleifend proin. Turpis eget odio lectus nunc imperdiet. Vitae convallis commodo dui sollicitudin viverra congue. Quis gravida tincidunt sed quis ultrices habitasse.</p>
-                </div>
-                <div class="second-content">
-                    <h5 class="sitemap-content">SITEMAP</h5>
-                    <ul class="list-sitemap">
-                        <li>About</li>
-                        <li>Service</li>
-                        <li>Portfolio</li>
-                        <li>Contact Us</li>
-                    </ul>
-                </div>
-                <div class="third-content">
-                    <div class="contact-us-section">
-                        <h5 class="contact-us-title">CONTACT US</h5>
-                        <div class="map-section">
-                            <img src="../assets/logo/logo_map.png" class="icon-footer icon-map">
-                            <div class="content-map-section">
-                                <p> Menara Global</p>
-                                <p> 15th Floor Unit C-D</p>
-                                <p> Jl Gatut Subroto No Kav 27,</p>
-                                <p> RT. 03/RW.03, Kuningan, Jakarta Selatan</p>
-                                <p> 12980</p>
-                                <p> Indonesia</p>
-                            </div>
-                        </div>
-                        <div class="mail-linkedin-facebook-section">
-                            <div class="mail-section">
-                                <img src="../assets/logo/logo_mail.png" class="icon-footer icon-mail">
-                                <p class="content-last-footer-section">info@digitalnative.id</p>
-                            </div>
-                            <div class="linkedin-section">
-                                <img src="../assets/logo/logo_linkedin.png" class="icon-footer icon-linkedin">
-                                <p class="content-last-footer-section">Digital Native Agency Indonesia</p>
-                            </div>
-                            <div class="facebook-section">
-                                <img src="../assets/logo/logo_facebook.png" class="icon-footer icon-facebook">
-                                <p class="content-last-footer-section">Digital Native Agency Indonesia</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright-section">
-                <p>Copyright  ©  2020 Digital Native Agency</p>
-            </div>
-        </div>
     </div>
 </template>
 
-<!--<style scoped>
+<style scoped>
 
 .bg-service-bar {
     position: absolute;
@@ -266,4 +214,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id et egestas dui liber
     margin-top: 50px;
 }
 
-</style> -->
+</style>

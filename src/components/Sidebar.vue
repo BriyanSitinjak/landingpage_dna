@@ -1,7 +1,9 @@
 <template>
     <div id="app">
         <div class="sidebar-fixed">
-            <img class="logo-dna" src="../assets/logo/logo_dna.png">
+            <!-- <button v-on:click="goHome"><img src="../assets/logo/logo_dna.png"/></button -->
+            <!-- image v-on click go to home -->
+            <img class="logo-dna" src="../assets/logo/logo_dna.png" >
             <div class="logo-sidebar-fixed">
                 <img class="logo-frame" src="../assets/logo/logo_frame.png">
                 <img class="logo logo-linkedin" src="../assets/logo/logo_linkedin.png" alt="LinkedIn">
@@ -11,6 +13,14 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    methods:{
+        
+    }
+}
+</script>
 
 <style scoped>
 #app {
@@ -42,6 +52,5 @@
     height: 30px;
     margin: 20px 0px 0px 20px;
 }
-
 
 </style>

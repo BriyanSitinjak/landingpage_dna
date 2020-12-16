@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # digital-native-agency
 
 ## Project setup
@@ -22,3 +23,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# landingpage_dna
+>>>>>>> b77d0045f30596d737582c500efffdad1495eec4
