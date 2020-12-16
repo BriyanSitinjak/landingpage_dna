@@ -4,8 +4,8 @@
             <div class="main-menu-bar">
                 <v-img
                 src="../assets/images/background_img.png"
-                width="100%"
-                height="100%"
+                width=100%
+                height=100%
                 ></v-img>
                 <div class="main-container">
                     <h2>DIGITAL NATIVE AGENCY</h2>
@@ -120,14 +120,14 @@ export default {
 </script>
 
 <style scoped>
-/*-------------------- HOME WRAPPER-------------------- */
+/*--------------------HOME WRAPPER-------------------- */
 .main-menu-bar {
     position: relative;
     background-color: #ffffff;
     width: 100%;
     height: 100%;
     left: 70px;
-    color: #Ffffff;
+    color: #ffffff;
 }
 
 .main-container {

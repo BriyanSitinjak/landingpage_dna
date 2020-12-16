@@ -24,38 +24,40 @@
                         <div class="line-service-content"></div>
                         <div class="second-mid-service">
                             <div class="content-mid-service">
-                                <div class="content-mid-service-first">
-                                    <img src="../assets/logo/number_01.png" class="number-01">
+                                <div class="number-text-service">
+                                    <img src="../assets/logo/number_01.png" class="service-number">
                                     <h2>Analyst</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget vestibulum gravida mattis neque, eget orci.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </div>
-                                <div class="content-mid-service-second">
-                                    <img src="../assets/logo/number_02.png" class="number-02">
+                                <div class="number-text-service">
+                                    <img src="../assets/logo/number_02.png" class="service-number">
                                     <h2>Design</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget vestibulum gravida mattis neque, eget orci.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </div>
-                                <div class="content-mid-service-third">
-                                    <img src="../assets/logo/number_03.png" class="number-03">
+                                <div class="number-text-service">
+                                    <img src="../assets/logo/number_03.png" class="service-number">
                                     <h2>Create</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget vestibulum gravida mattis neque, eget orci.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="third-mid-service">
-                            <img src="../assets/logo/logo_analyst.png" class="img-analyst">
-                            <img src="../assets/logo/logo_design.png" class="img-design">
-                            <img src="../assets/logo/logo_create.png" class="img-create">
+                        <div>
+                            <div class="third-mid-service">
+                                <img src="../assets/logo/logo_analyst.png" class="side-logo-service img-analyst">
+                                <img src="../assets/logo/logo_design.png" class="side-logo-service img-design">
+                                <img src="../assets/logo/logo_create.png" class="side-logo-service img-create">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        <!-- <Footer/> -->
+        <Footer/>
     </div>
 </template>
 
 <script>
 import Sidebar from '@/components/Sidebar.vue'
-// import Footer from '@/components/Footer.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
     data(){
@@ -65,7 +67,7 @@ export default {
     },
     components:{
         Sidebar,
-        // Footer
+        Footer
     }
 }
 </script>
@@ -95,7 +97,7 @@ export default {
 /*-------------------- MIDDLE SERVICE WRAPPER-------------------- */
 .how-we-work {
     position: relative;
-    width: 1832px;
+    width: 1824px;
     height: 851px;
     background: #805CBA;
 }
@@ -107,120 +109,94 @@ export default {
 }
 
 .title-mid-service {
-    /* position: relative; */
     width: 375px;
     height: 132px;
-    margin: 104px 0px 0px 117px;
-    /* font-style: normal; */
-    /* font-weight: normal; */
+    margin: 104px 0px 0px 75px;
     font-size: 50px;
     line-height: 60px;
-    /* display: flex;
-    align-items: center; */
     color: #FFFFFF;
 }
 
 .line-service-content {
-    position: absolute;
     width: 643px;
-    height: 0px;
-    left: 280px;
-    top: 420px;
-    border: 10px solid #FFFFFF;
+    margin: 193px 0px 0px 90px ;
+    border: 6px solid #FFFFFF;
     transform: rotate(90deg);
 }
+
 .content-mid-service {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+}
+
+.number-text-service {
     position: relative;
-    top: -500px;
-}
-
-.content-mid-service-first{
-    position: absolute;
-    width: 639px;
-    height: 162px;
-    left: 810px;
-    top: 634px;
-}
-
-.content-mid-service-second {
-    position: absolute;
     width: 639px;
     height: 160px;
-    left: 810px;
-    top: 870px;
+    margin: auto;
+    padding-top: 110px;
+    margin-bottom: 85px;
+    margin-left: 500px;
 }
 
-.content-mid-service-third {
+.service-number {
     position: absolute;
-    width: 639px;
-    height: 163px;
-    left: 807px;
-    top: 1112px;
-}
-
-.number-01 {
-    position: absolute;
-    width: 181px;
-    height: 98px;
-    /* left: 107px; */
-    /* top: 634px; */
+    width: 115px;
+    height: 85px;
     font-style: normal;
     font-weight: bold;
     font-size: 140px;
     line-height: 164px;
-    color: #6F46B0;
+    color: #000000;
 }
 
-.number-02 {
+.number-text-service > h2 {
     position: absolute;
-    width: 181px;
-    height: 98px;
-    /* left: 810px; */
-    /* top: 870px; */
-    font-style: normal;
-    font-weight: bold;
-    font-size: 140px;
-    line-height: 164px;
-    color: #6F46B0;
+    margin-left: 95px;
+    font-size: 28px;
+    color: #ffffff;
 }
 
-.number-03 {
+.number-text-service > p {
     position: absolute;
-    width: 181px;
-    height: 98px;
-    /* left: 807px; */
-    /* top: 1112px; */
-    font-style: normal;
-    font-weight: bold;
-    font-size: 140px;
-    color: #6F46B0;
-    }
+    width: 350px;
+    margin: 70px 0px 0px 95px;
+    color: #FFFFFF;
+}
+
+.third-mid-service {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    color:rgba(255, 255, 255, 1);
+}
+
+.side-logo-service {
+    position: relative;
+    width: 150px;
+    height: auto;
+    margin-left: 1080px;
+    margin-top: 105px;
+    margin-bottom: 32px;
+}
 
 .img-analyst {
-    position: absolute;
     width: 75.81px;
     height: 100.31px;
-    top: 115px;
-    left: 1580px;
-    color:rgba(255, 255, 255, 1);
 }
 
 .img-design {
-    position: absolute;
     width: 104.62px;
     height: 104.62px;
-    top: 360px;
-    left: 1579px;
-    color:rgba(255, 255, 255, 1);
 }
 
 .img-create {
-    position: absolute;
+    top: 15px;
     width: 108px;
     height: 77.84px;
-    top: 620px;
-    left: 1579px;
-    color:rgba(255, 255, 255, 1);
 }
 
 </style>

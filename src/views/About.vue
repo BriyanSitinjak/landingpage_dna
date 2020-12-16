@@ -1,217 +1,129 @@
 <template>
-    <div class="main-service-bar">
-        <img src="../assets/images/cover_bg_service.png" class="bg-service-bar">
-        <div class="main-service-container">
-            <div class="main-service-content">
-                <h1>We bring your dream
-                <br> 
-                <span>into reality</span></h1>
-            </div>
-        </div>
-        <div class="menu-bar-container">
-            <img class="logo-dna" src="../assets/logo/logo_dna.png" alt="Logo DNA">
-            <div class="logo-menu-bar">
-                <img class="logo-frame" src="../assets/logo/logo_frame.png" alt="Frame">
-                <img class="logo logo-linkedin" src="../assets/logo/logo_linkedin.png" alt="LinkedIn">
-                <img class="logo logo-facebook" src="../assets/logo/logo_facebook.png" alt="Facebook">
-                <img class="logo logo-instagram" src="../assets/logo/logo_instagram.png" alt="Instagram">
-            </div>
-        </div>
-        <div class="how-we-work">
-            <div class="first-mid-service">
-                <div class="title-mid-service">
-                    <p>HOW WE  WORK?</p>
-                </div>
-            </div>
-            <div class="line-service-content"></div>
-            <div class="second-mid-service">
-                <div class="content-mid-service">
-                    <div class="content-mid-service-first">
-                        <img src="../assets/logo/number_01.png" class="number-01">
-                        <h2>Analyst</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget vestibulum gravida mattis neque, eget orci.</p>
-                    </div>
-                    <div class="content-mid-service-second">
-                        <img src="../assets/logo/number_02.png" class="number-02">
-                        <h2>Design</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget vestibulum gravida mattis neque, eget orci.</p>
-                    </div>
-                    <div class="content-mid-service-third">
-                        <img src="../assets/logo/number_03.png" class="number-03">
-                        <h2>Create</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget vestibulum gravida mattis neque, eget orci.</p>
+    <div>
+        <Sidebar />
+            <div class="about-container">
+                <div class="main-about-bar">
+                    <div class="main-about-wrapper">
+                        <v-img
+                        src="../assets/images/img_header_about.png"
+                        max-width="100%"
+                        max-height="100%"
+                        >
+                            <img class="bg-header-about" src="../assets/images/bg_header_about.png">
+                            <img class="diagonal-header-long" src="../assets/images/diagonal_img_long.png">
+                            <img class="diagonal-header-short" src="../assets/images/diagonal_img_short.png">
+                        </v-img>
+                        <div class="about-header">
+                            <h2>WHY US?</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis omnis, possimus dolorum soluta delectus odit inventore quaerat dicta odio impedit, amet corrupti quisquam alias? Voluptates inventore earum illo hic molestiae!</p>
+                        </div>
                     </div>
                 </div>
+                <div class="mid-about">
+                    <div class="mid-about-wrapper">
+                        <div class="content-mid-about">
+                            <p>“You’re gotta start with customer experience and work backwards to the technology “-</p>
+                            <p>Steve Jobs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-about">
+                    <div class="story-about-wrapper">
+                        <div class="content-about-bigtext">
+                            <h2>Our Story About DNA</h2>
+                        </div>
+                        <div class="content-about childtext">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibusLorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-about">
+                    <div class="team-about-wrapper">
+                        <div class="first-img-about">
+                            <v-img
+                            src="../assets/images/img_mid_about_01.png"
+                            ></v-img>
+                        </div>
+                        <v-col>
+                            <v-row>
+                                <v-img
+                                src="../assets/images/img_mid_about_02.png"
+                                ></v-img>
+                            </v-row>
+                        </v-col>
+                        <v-col>
+                            <v-row>
+                                <v-img
+                                src="../assets/images/img_mid_about_02.png"
+                                ></v-img>
+                            </v-row>
+                        </v-col>
+                    </div>
+                </div>
+                <div class="join-us-about">
+                    <div class="join-us-about-wrapper">
+                        <v-img
+                        src="../assets/images/img_joinus_about.png"
+                        ></v-img>
+                        <div class="join-us-content">
+                            <h4>Be one of the super human in DNA?</h4>
+                            <p>Our cool team wait you to be part of us</p>
+                        </div>
+                        <div class="btn-join-us">
+                            <a href="/contact-us"><span>Join us</span></a>
+                            <!-- <v-img
+                            src="../assets/images/arrow_join_us.png"
+                            ></v-img> -->
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="third-mid-service">
-                <img src="../assets/logo/logo_analyst.png" class="img-analyst">
-                <img src="../assets/logo/logo_design.png" class="img-design">
-                <img src="../assets/logo/logo_create.png" class="img-create">
-            </div>
-        </div>
+        <Footer />
     </div>
 </template>
 
-<style scoped>
+<script>
+import Sidebar from '@/components/Sidebar.vue'
+import Footer from '@/components/Footer.vue'
 
-.bg-service-bar {
-    position: absolute;
-    width: 1832px;
-    height: 560px;
-    left: 96px;
-    top: 0px;
-    background: linear-gradient(0deg, rgba(94, 44, 176, 0.6), rgba(94, 44, 176, 0.6));
-}
-
-.main-service-content h1 {
-    position: absolute;
-    width: 906px;
-    height: 140px;
-    left: 210px;
-    top: 200px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 64px;
-    line-height: 75px;
-    color: #FFFFFF;
-}
-
-.how-we-work {
-    position: absolute;
-    width: 1832px;
-    height: 851px;
-    left: 96px;
-    top: 560px;
-    background: #805CBA;
-}
-
-.title-mid-service {
-    position: absolute;
-    width: 375px;
-    height: 132px;
-    left: 117px;
-    top: 104px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 64px;
-    line-height: 75px;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-}
-
-.line-service-content {
-    position: absolute;
-    width: 643px;
-    height: 0px;
-    left: 280px;
-    top: 420px;
-    border: 10px solid #FFFFFF;
-    transform: rotate(90deg);
-}
-
-.content-mid-service {
-    position: relative;
-    top: -500px;
-}
-
-.content-mid-service-first{
-    position: absolute;
-    width: 639px;
-    height: 162px;
-    left: 810px;
-    top: 634px;
-}
-
-.content-mid-service-second {
-    position: absolute;
-    width: 639px;
-    height: 160px;
-    left: 810px;
-    top: 870px;
-}
-
-.content-mid-service-third {
-    position: absolute;
-    width: 639px;
-    height: 163px;
-    left: 807px;
-    top: 1112px;
-}
-
-.number-01 {
-    position: absolute;
-    width: 181px;
-    height: 98px;
-    /* left: 107px; */
-    /* top: 634px; */
-    font-style: normal;
-    font-weight: bold;
-    font-size: 140px;
-    line-height: 164px;
-    color: #6F46B0;
-}
-
-.number-02 {
-    position: absolute;
-    width: 181px;
-    height: 98px;
-    /* left: 810px; */
-    /* top: 870px; */
-    font-style: normal;
-    font-weight: bold;
-    font-size: 140px;
-    line-height: 164px;
-    color: #6F46B0;
-}
-
-.number-03 {
-    position: absolute;
-    width: 181px;
-    height: 98px;
-    /* left: 807px; */
-    /* top: 1112px; */
-    font-style: normal;
-    font-weight: bold;
-    font-size: 140px;
-    color: #6F46B0;
+export default {
+    data(){
+        return{
+            //
+        }
+    },
+    components:{
+        Sidebar,
+        Footer
     }
+}
+</script>
 
-.img-analyst {
-    position: absolute;
-    width: 75.81px;
-    height: 100.31px;
-    top: 115px;
-    left: 1580px;
-    color:rgba(255, 255, 255, 1);
+<style scoped>
+.about-container {
+    position: relative;
+    left: 70px;
 }
 
-.img-design {
-    position: absolute;
-    width: 104.62px;
-    height: 104.62px;
-    top: 360px;
-    left: 1579px;
-    color:rgba(255, 255, 255, 1);
+.main-about-bar {
+    position: relative;
+    width: 1824px;
+    height: 560px;
 }
 
-.img-create {
-    position: absolute;
-    width: 108px;
-    height: 77.84px;
-    top: 620px;
-    left: 1579px;
-    color:rgba(255, 255, 255, 1);
+.main-about-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-.menu-footer-service {
-    background: url('../assets/images/footer_home.png');
+.about-header {
     position: absolute;
-    width: 1834px;
-    height: 480px;
-    left: 94px;
-    top: 1360px;
-    margin-top: 50px;
+    top: 0px;
+    color: #ffffff;
+    width: 292px;
+    height: 212px;
+    margin-left: 900px;
 }
 
 </style>

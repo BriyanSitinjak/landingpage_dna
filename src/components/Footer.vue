@@ -19,10 +19,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id et egestas dui liber
                 <div class="first-footer-two">
                     <h5>SITEMAP</h5>
                     <ul>
-                        <li>About</li>
-                        <li>Service</li>
-                        <li>Portfolio</li>
-                        <li>Contact Us</li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/service">Service</a></li>
+                        <li><a href="/portfolio">Portfolio</a></li>
+                        <li><a href="/contact-us">Contact Us</a></li>
                     </ul>
                 </div>
             </v-row>
@@ -122,6 +122,11 @@ export default {
 
 .first-footer-two > h5 {
     padding-bottom: 35px;
+}
+
+.first-footer-two > ul > li a{
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .first-footer-two > ul > li{
