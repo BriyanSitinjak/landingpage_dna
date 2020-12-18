@@ -332,7 +332,7 @@ export default {
 .line-project {
     width: 368px;
     margin: -190px 0px 0px 30px;
-    border: 6px solid #FFFDFD;
+    border: 4px solid #FFFDFD;
     transform: rotate(90deg);
 }
 

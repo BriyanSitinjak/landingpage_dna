@@ -37,6 +37,8 @@ export default {
 
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 #app {
   font-family: 'Roboto', 'Sans Serif';
   -webkit-font-smoothing: antialiased;
