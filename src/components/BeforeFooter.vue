@@ -1,0 +1,84 @@
+<template>
+    <v-footer class="before-footer">
+        <div class="before-footer-wrapper">
+            <div class="content-before-footer">
+                <div class="title-before-content">
+                    <h2>Like what you see ?</h2>
+                    <p>Feel free to ask us more</p>
+                </div>
+                <div class="btn-before-content">
+                    <a href="/contact-us">Let's discuss</a>
+                    <img src="../assets/images/arrow_join_us.png" >
+                </div>
+            </div>
+            <div class="img-before-footer">
+                <v-img
+                src="../assets/images/img_discuss_portfolio.png"
+                width="70%"
+                height="70%"
+                ></v-img>
+            </div>
+        </div>
+    </v-footer>
+</template>
+
+<script>
+export default {
+    
+}
+</script>
+
+<style scoped>
+
+.before-footer {
+    font-family: 'Roboto';
+    background-image: url('../assets/images/footer_home.png');
+    left: 70px;
+    height: 400px;
+    width: 1824px;
+}
+
+.img-before-footer{
+    position: relative;
+    margin: 50px 0px 0px 600px;
+}
+
+.content-before-footer {
+    position: absolute;
+    color: #ffffff;
+    margin: 80px 0px 0px 65px;
+}
+
+.title-before-content > h2 {
+    font-size: 33px;
+    padding-bottom: 5px;
+}
+
+.title-before-content > p {
+    color: #c4c4c4;
+    padding-bottom: 33px;
+}
+
+.btn-before-content {
+    background-color: #ffffff;
+    width: 200px;
+    height: 60px;
+    border-radius: 25px;
+}
+
+.btn-before-content > a {
+    position: absolute;
+    color: #5E2CB0;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 15px 0px 0px 15px;
+}
+
+.btn-before-content > img {
+    position: absolute;
+    width: 12%;
+    height: 8%;
+    margin: 23px 0px 0px 150px;
+}
+
+</style>

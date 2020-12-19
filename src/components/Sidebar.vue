@@ -1,14 +1,12 @@
 <template>
     <div id="app">
         <div class="sidebar-fixed">
-            <!-- <button v-on:click="goHome"><img src="../assets/logo/logo_dna.png"/></button -->
-            <!-- image v-on click go to home -->
-            <img class="logo-dna" src="../assets/logo/logo_dna.png" >
+            <img v-on:click="gotoHome" class="logo-dna" src="../assets/logo/logo_dna.png" >
             <div class="logo-sidebar-fixed">
                 <img class="logo-frame" src="../assets/logo/logo_frame.png">
-                <img class="logo logo-linkedin" src="../assets/logo/logo_linkedin.png" alt="LinkedIn">
-                <img class="logo logo-facebook" src="../assets/logo/logo_facebook.png" alt="Facebook">
-                <img class="logo logo-instagram" src="../assets/logo/logo_instagram.png" alt="Instagram">
+                <img v-on:click="gotoLinkedin" class="logo logo-linkedin" src="../assets/logo/logo_linkedin.png" alt="LinkedIn">
+                <img v-on:click="gotoFacebook" class="logo logo-facebook" src="../assets/logo/logo_facebook.png" alt="Facebook">
+                <img v-on:click="gotoInstagram" class="logo logo-instagram" src="../assets/logo/logo_instagram.png" alt="Instagram">
             </div>
         </div>
     </div>
@@ -17,7 +15,18 @@
 <script>
 export default {
     methods:{
-        
+        gotoHome: function(){
+            window.location.href = '/'
+        },
+        gotoLinkedin: function() {
+            window.location.href = 'https://www.linkedin.com/company/digital-native-agency-indonesia/'
+        },
+        gotoFacebook: function() {
+            window.location.href = 'https://web.facebook.com/Digital-Native-Agency-111851087042638'
+        },
+        gotoInstagram: function() {
+            window.location.href = 'https://www.instagram.com/digital_native_dna/'
+        }
     }
 }
 </script>
@@ -51,6 +60,10 @@ export default {
     width: 30px;
     height: 30px;
     margin: 20px 0px 0px 20px;
+}
+
+.logo , .logo-dna{
+    cursor: pointer;
 }
 
 </style>

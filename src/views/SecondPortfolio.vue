@@ -13,7 +13,7 @@
                         ></v-img>
                         <div class="main-portfolio">
                             <div class="content-mid-portfolio">
-                                <h2>ATMA JAYA</h2>
+                                <h2>LIVERA</h2>
                                 <div class="main-content-portfolio">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tortor suspendisse tempus vivamus nisi pellentesque molestie consequat tellus. Rhoncus vitae consectetur consectetur fermentum sed proin nisl aliquet nulla. Pretium morbi urna dignissim cras adipiscing nunc et. Tempus ultricies varius morbi commodo elementum urna vulputate.</p>
                                 </div>
@@ -41,10 +41,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="atmajaya-portfolio-two">
-                            <div class="atmajaya-content-portfolio">
+                        <div class="livera-portfolio-two">
+                            <div class="livera-content-portfolio">
                                 <v-img
-                                src="../assets/images/img_content_portfolio.png"
+                                src="../assets/images/img_livera_portfolio_01.png"
                                 width="100%"
                                 height="100%"
                                 ></v-img>
@@ -75,23 +75,23 @@
                             <div class="prev-next-wrapper">
                                 <v-row>
                                     <v-col>
-                                        <div v-on:click="gotoLivera" class="prev-prev-button">
-                                            <img src="../assets/images/img_livera_portfolio.png" class="prev-button">
+                                        <div class="prev-prev-button">
+                                            <img src="../assets/images/img_atmajaya_portfolio.png" class="prev-button">
                                                 <div class="prev-content-button">
                                                     <div class="transform-prev">
                                                         <div class="title-prev">
                                                             <h3>PREVIOUS</h3>
                                                         </div>
                                                         <div class="main-prev">
+                                                            <h3>BINBANK</h3>
                                                             <img src="../assets/logo/arrow-prev-next.png">
-                                                            <h3>LIVERA</h3>
                                                         </div>
                                                     </div>
                                                 </div>
                                         </div>
                                     </v-col>
                                     <v-col>
-                                        <div class="next-next-button">
+                                        <div v-on:click="gotoAtmajaya" class="next-next-button">
                                             <img src="../assets/images/img_atmajaya_portfolio.png" class="next-button">
                                                 <div class="next-content-button">
                                                     <div class="transform-next">
@@ -99,7 +99,7 @@
                                                             <h3>NEXT</h3>
                                                         </div>
                                                         <div class="main-next">
-                                                            <h3>BINBANK</h3>
+                                                            <h3>ATMAJAYA</h3>
                                                             <img src="../assets/logo/arrow-prev-next.png">
                                                         </div>
                                                     </div>
@@ -127,19 +127,19 @@ import BeforeFooter from '@/components/BeforeFooter.vue'
 export default {
     data(){
         return{
-            // 
+            //
         }
     },
-    components:{
+    components : {
         Sidebar,
         Footer,
         HeaderPortfolio,
         OurHappyClient,
         BeforeFooter
     },
-    methods: {
-        gotoLivera: function () {
-            window.location.href = '/second-portfolio'
+    methods : {
+        gotoAtmajaya: function(){
+            window.location.href = "/portfolio"
         }
     }
 }
@@ -158,7 +158,7 @@ export default {
     height: 100%;
 }
 
-/*--------------------ATMAJAYA MID CONTENT -------------------- */
+/*--------------------LIVERA MID CONTENT -------------------- */
 .content-mid-portfolio {
     position: absolute;
     top: 0px;
@@ -228,14 +228,14 @@ export default {
     color: #4F4F4F;
 }
 
-/*--------------------ATMAJAYA CONTENT TWO-------------------- */
-.atmajaya-portfolio-two {
+/*--------------------LIVERAh CONTENT TWO-------------------- */
+.livera-portfolio-two {
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-.atmajaya-content-portfolio {
+.livera-content-portfolio {
     position: relative;
     margin: 0px 140px 0px 80px;
 }
@@ -324,7 +324,6 @@ export default {
 
 /*--------------------PREV BUTTON CONTENT-------------------- */
 .prev-prev-button {
-    cursor: pointer;
     position: absolute;
     width: 635px;
     height: 170px;
@@ -335,6 +334,7 @@ export default {
     position: absolute;
     width: 100%;
     height: 100%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .prev-content-button {
@@ -343,7 +343,7 @@ export default {
     height: 170px;
     color: #ffffff;
     transform: matrix(-1, 0, 0, 1, 0, 0);
-    background: linear-gradient(90.02deg, #4BADE4 0.02%, rgba(75, 173, 228, 0.6) 56.97%, rgba(75, 173, 228, 0) 99.99%);
+    background: linear-gradient(90.02deg, #E9BB16 0.02%, rgba(235, 144, 75, 0.8) 56.97%, rgba(233, 113, 22, 0) 99.99%);
 }
 
 .transform-prev {
@@ -361,20 +361,27 @@ export default {
 }
 
 .main-prev {
+    position: absolute;
     font-size: 20px;
     display: flex;
 }
 
 .main-prev > img {
-    margin: 6px 25px 0px 0px;
-    width: 32%;
-    height: 32%;
+    margin-top: 5px;
+    margin-left: -20px;
+    width: 55px;
+    height: 18px;
+}
+
+.main-prev > h3 {
+    position: absolute;
+    margin-left: 60px;
 }
 
 /*--------------------NEXT BUTTON CONTENT-------------------- */
 .next-next-button {
     position: absolute;
-    /* margin-left: 20px; */
+    cursor: pointer;
     width: 655px;
     height: 170px;
     top: 0px;
@@ -392,7 +399,7 @@ export default {
     width: 655px;
     height: 170px;
     color: #ffffff;
-    background: linear-gradient(90.02deg, #E9BB16 0.02%, rgba(233, 187, 22, 0.8) 56.97%, rgba(233, 187, 22, 0) 99.99%);
+    background: linear-gradient(90.02deg, #E97116 0.02%, rgba(233, 113, 22, 0.8) 56.97%, rgba(233, 113, 22, 0) 99.99%);
 }
 
 .transform-next {

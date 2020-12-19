@@ -73,6 +73,7 @@ export default {
 
 <style scoped>
 .menu-footer {
+    font-family: 'Roboto';
     background-image: url('../assets/images/footer_home.png');
     background-repeat: no-repeat;
     width: 100%;
