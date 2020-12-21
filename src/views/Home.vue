@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div app> 
         <Sidebar/>
             <div class="main-menu-bar">
                 <v-img
@@ -8,7 +8,7 @@
                 height=100%
                 ></v-img>
                 <div class="main-container">
-                    <h2>DIGITAL NATIVE AGENCY</h2>
+                    <h2 class="text-xs-h6">DIGITAL NATIVE AGENCY</h2>
                     <div class="main-content">
                         <h2>Digitalize Your Business Through Innovation</h2>
                     </div>

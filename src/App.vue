@@ -3,28 +3,17 @@
     <div>
       <!-- <router-link to="/">Home</router-link> 
       <router-link to="/service">Service</router-link> -->
-      <!-- <Sidebar/> -->
-      <!-- <Footer/> -->
-      <!-- <Home /> -->
       <router-view/>
     </div>
   </div>
 </template>
 
 <script>
-// import Sidebar from '@/components/Sidebar.vue'
-// import Footer from '@/components/Footer.vue'
-// import Home from '@/views/Home.vue'
-// import Service from '@views/Service.vue'
-
 
 export default {
   name: 'App',
   components: {
-    // Sidebar
-    // Footer
-    // Home,
-    // Service
+    //
   },
   data(){
     return {

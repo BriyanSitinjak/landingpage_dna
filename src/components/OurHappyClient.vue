@@ -8,12 +8,12 @@
             <div class="logo-scroll-client">
                 <div class="logo-client">
                     <div class="logo-size-client">
-                        <img class="logo-livera" src="../assets/images/logo_livera.png">
+                        <img v-on:click="gotoLivera" src="../assets/images/logo_livera.png">
                         <img src="../assets/images/logo_wvi.png">
-                        <img src="../assets/images/logo_atmajaya.png">
-                        <img  src="../assets/images/logo_livera.png">
+                        <img v-on:click="gotoAtmajaya" src="../assets/images/logo_atmajaya.png">
+                        <img v-on:click="gotoLivera" src="../assets/images/logo_livera.png">
                         <img src="../assets/images/logo_wvi.png">
-                        <img src="../assets/images/logo_atmajaya.png">
+                        <img v-on:click="gotoAtmajaya" src="../assets/images/logo_atmajaya.png">
                     </div>
                 </div>
             </div>
@@ -27,7 +27,14 @@
 
 <script>
 export default {
-    
+    methods: {
+        gotoLivera : function () {
+            window.location.href = '/portfolio'
+        },
+        gotoAtmajaya : function () {
+            window.location.href = '/second-portfolio'
+        }
+    }
 }
 </script>
 
