@@ -13,7 +13,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id et egestas dui libero et eget neque. Consequat fusce justo, diam sed. Scelerisque mus vitae varius ut non volutpat mattis eleifend proin. Turpis eget odio lectus nunc imperdiet. Vitae convallis commodo dui sollicitudin viverra congue. Quis gravida tincidunt sed quis ultrices habitasse. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id et egestas dui libero et eget neque. Consequat fusce justo, diam sed. Scelerisque mus vitae varius ut non volutpat mattis eleifend proin. Turpis eget odio lectus nunc imperdiet. Vitae convallis commodo dui sollicitudin viverra congue. Quis gravida tincidunt sed quis ultrices habitasse.</p>
                 </div>
             </v-col>
-            <v-col cols="12" sm="12" md="1" lg="1" xl="1" >
+            <v-col cols="12" sm="12" md="1" lg="1" xl="1" class="footer-two">
                 <div class="first-footer-two">
                     <h5>SITEMAP</h5>
                     <ul>
@@ -24,7 +24,7 @@
                     </ul>
                 </div>
             </v-col>
-            <v-col cols="12" sm="12" md="3" lg="3" xl="3">
+            <v-col cols="12" sm="12" md="3" lg="3" xl="3" class="footer-three">
                 <div class="first-footer-three">
                     <h5>CONTACT US</h5>
                     <div class="map-section">
@@ -211,12 +211,14 @@ export default {
     font-style: normal;
 }
 
+/*--------------------MOBILE VIEW WRAPPER-------------------- */
 @media (min-width: 200px) and (max-width: 960px) {
-    * {
+    .footer-one, .footer-two, .footer-three {
         font-size: 15px;
         text-align:center;
         background-image: url('../assets/images/footer_home.png');
     }
+
     .footer-one {
         margin: auto;
         padding-left: 30px;
@@ -228,6 +230,7 @@ export default {
     }
     .first-footer-one, .second-footer-one, .third-footer-one {
         margin: auto;
+        text-align: center;
         padding-right: -100px;
     }
     .first-footer-two {

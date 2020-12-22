@@ -1,6 +1,6 @@
 <template>
     <div app> 
-        <Sidebar/>
+        <Sidebar /> 
             <div class="main-menu-bar">
                 <v-img
                 src="../assets/images/background_img.png"
@@ -362,6 +362,5 @@ export default {
     width: 60px;
     height: 60px;
 }
-
 
 </style>
