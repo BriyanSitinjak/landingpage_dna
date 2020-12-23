@@ -8,7 +8,7 @@
                 height=100%
                 ></v-img>
                 <div class="main-container">
-                    <h2 class="text-xs-h6">DIGITAL NATIVE AGENCY</h2>
+                    <h2>DIGITAL NATIVE AGENCY</h2>
                     <div class="main-content">
                         <h2>Digitalize Your Business Through Innovation</h2>
                     </div>
@@ -17,18 +17,20 @@
             </div>
             <div class="mid-wrapper">
                 <div class="mid-content-wrapper">
-                    <div class="mid content-years">
-                        <p class="txt-number">2</p>
-                        <p class="txt-content">Year of Experience</p>
-                    </div>
-                    <div class="mid content-projects">
-                        <p class="txt-number">10</p>
-                        <p class="txt-content">Successful Projects</p>
-                    </div>
-                    <div class="mid content-clients">
-                        <p class="txt-number">6</p>
-                        <p class="txt-content">Happy Clients</p>
-                    </div>
+                    <v-row>
+                        <v-col class="mid content-years">
+                            <p class="txt-number">2</p>
+                            <p class="txt-content">Year of Experience</p>
+                        </v-col>
+                        <v-col class="mid content-projects">
+                            <p class="txt-number">10</p>
+                            <p class="txt-content">Successful Projects</p>
+                        </v-col>
+                        <v-col class="mid content-clients">
+                            <p class="txt-number">6</p>
+                            <p class="txt-content">Happy Clients</p>
+                        </v-col>
+                    </v-row>
                 </div>
             </div>
             <div class="mid-service">
@@ -156,8 +158,8 @@ export default {
 .text-learn-more {
     position: absolute;
     font-size: 25px;
-    line-height: 42px;
-    padding: 5px 0px 0px 25px;
+    height: 42px;
+    padding: 13px 0px 0px 35px;
     color: #5E2CB0;
 }
 
@@ -174,7 +176,7 @@ export default {
     position: absolute;
     width: 100%;
     height: 100%;
-    padding: 60px 0px 80px 0px;
+    padding: 50px 0px 0px 70px;
 }
 
 .mid-content-wrapper {
@@ -182,9 +184,8 @@ export default {
     height: 100%;
 }
 
-.mid-content-wrapper > div {
+.mid-content-wrapper > v-row > v-col {
     margin: auto;
-    margin-left: -650px;
     text-align: center;
 }
 
@@ -193,19 +194,28 @@ export default {
     color: #000000;
 }
 
+.content-years {
+    margin-left: 135px;
+}
+
 .content-projects {
-    padding-left: 860px;
+    margin-left: 545px;
 }
 
 .content-clients {
-    padding-left: 1693px;
+    margin-left: 980px;
 }
 
 .txt-number {
     font-weight: 500;
     font-size: 50px;
     line-height: 75px;
+    margin-left: 55px;
     color: #5E2CB0;
+}
+
+.content-clients > p.txt-number {
+    margin-left: 50px;
 }
 
 /*-------------------- SERVICE WRAPPER-------------------- */
@@ -362,14 +372,76 @@ export default {
     height: 60px;
 }
 
-@media (min-width: 200px) and (max-width: 960px) {
+@media (min-width: 200px) and (max-width: 600px) {
     .main-menu-bar, .mid-wrapper, .mid-service, .project-menu {
         left: 0px;
     }
-/* 
-    .main-container {
-        position: relative;
-    } */
+    .main-container > h2{
+        text-align: left;
+        margin: 10px;
+        font-size: 18px;
+        margin-bottom: 15%;
+    }
+    .main-content > h2 {
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0px;
+        margin-left: 10%;
+        width: 250px;
+    }
+    .learn-more {
+        width: 145px;
+        height: 45px;
+        margin-left: 130px;
+    }
+    .text-learn-more {
+        font-size: 18px;
+        text-align: center;
+        margin-left: -10px;
+        margin-top: -2px;
+    }
+    /*-------------------- MIDDLE WRAPPER-------------------- */
+    .mid-wrapper {
+        /* border:2px solid red; */
+    }
+    .mid {
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+        width: 150px;
+        height: 100px;
+        margin-top: 50px;
+    }
+    .mid-content-wrapper {
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+    }
+    .txt-number {
+        font-size: 30px;
+        text-align: center;
+        margin-left: 25px;
+    }
+    .txt-content {
+        font-size: 12px;
+        width: 75px;
+        text-align: center;
+        margin-left: 50px;
+        /* border: 2px solid red; */
+    }
+    .content-clients > p.txt-content {
+        margin-left: 65px;
+    }
+    .content-years{
+        margin-left: -30px;
+    }   
+    .content-projects {
+        margin-left: 125px;
+    }
+    .content-clients {
+        margin-left: 270px;
+    }
 }
 
 </style>
