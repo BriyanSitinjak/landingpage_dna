@@ -344,4 +344,10 @@ export default {
     color: #5E2CB0;
 }
 
+@media (min-width: 200px) and (max-width: 960px) {
+    .about-container {
+        left: 0px;
+    }
+}
+
 </style>

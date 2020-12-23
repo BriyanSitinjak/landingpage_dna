@@ -344,7 +344,6 @@ export default {
     margin-left: 1210px;
 }
 
-
 .txt-project {
     font-weight: bold;
     font-size: 24px;
@@ -361,6 +360,16 @@ export default {
     margin: 200px 0px 50px 1100px;
     width: 60px;
     height: 60px;
+}
+
+@media (min-width: 200px) and (max-width: 960px) {
+    .main-menu-bar, .mid-wrapper, .mid-service, .project-menu {
+        left: 0px;
+    }
+/* 
+    .main-container {
+        position: relative;
+    } */
 }
 
 </style>

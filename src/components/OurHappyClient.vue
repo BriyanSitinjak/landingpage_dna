@@ -84,7 +84,7 @@ export default {
     padding-right: 20px;
 }
 
-.logo.size-client {
+.logo-size-client {
     width: 100%;
     height: 100%;
     float: left;
@@ -98,4 +98,35 @@ export default {
     margin-top: 10px;
     margin-left: 996px;
 }
+
+@media (min-width: 200px) and (max-width: 960px) {
+    .client-menu {
+        left: 0px;
+        height: 280px;
+    }
+
+    .client-menu-wrapper {
+        margin: 10px;
+    }
+    .line-client {
+        left: 175px;
+        width: 500px;
+    }
+    .logo-size-client {
+        width: 50%;
+        height: 50%;
+        display: flex;
+    }
+    .logo-scroll-client {
+        height: 100px;
+    }
+    .img-arrow-two {
+        position: relative;
+        top: 0px;
+        margin-left: 350px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
 </style>
