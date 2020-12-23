@@ -1,6 +1,6 @@
 <template>
     <v-container fluid class="menu-footer"> 
-        <v-row>
+        <v-row> 
             <v-col cols="12" sm="12" md="7" lg="7" xl="7" 
             class="footer-one">
                 <div class="first-footer-one">
@@ -222,6 +222,7 @@ export default {
         text-align:center;
         /* margin-left: 0px; */
         background-image: url('../assets/images/footer_home.png');
+        
     }
     .footer-one {
         margin: auto;
@@ -246,7 +247,7 @@ export default {
         position: absolute;
         margin-left: -38px;
         padding-left: 45px;
-        margin-top: 350px;
+        margin-top: 400px;
         /* margin: auto; */
         /* margin-left: -70px; */
     }
@@ -265,9 +266,9 @@ export default {
 
     .footer-three {
         position: absolute;
-        margin-top: 555px;
+        margin-top: 605px;
         /* margin: auto; */
-        margin-left: -38px;
+        margin-left: -40px;
         padding-left: 42px;
         /* margin-left: -70px; */
     }
@@ -288,7 +289,7 @@ export default {
         margin: auto;
         text-align: center;
         /* padding-right: 25px; */
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         margin-left: -21px;
     }
     .icon-footer { 
@@ -312,6 +313,6 @@ export default {
     .first-footer-two > h5 {
         margin-left: -75px;
     }
-    
+
 }
 </style>

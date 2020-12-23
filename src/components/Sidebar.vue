@@ -9,11 +9,11 @@
                 <img v-on:click="gotoInstagram" class="logo logo-instagram" src="../assets/logo/logo_instagram.png" alt="Instagram">
             </div>
         </div>
-        <!-- <div class="nav-bar">
+        <div class="nav-bar">
             <div class="nav-bar-wrapper">
                 <v-toolbar id="navbar">
                     <v-app-bar-nav-icon class="hidden-md-and-up" @click="sidebar = !sidebar"></v-app-bar-nav-icon>
-                    <v-navigation-drawer v-model="sidebar" app dark>
+                    <!-- <v-navigation-drawer v-model="sidebar" app dark>
                         <v-list nav dense>
                             <v-list-item v-for="(item, i) in menuItems" exact :key="i" :to="item.path">{{item.title}}</v-list-item>
                             <v-list-item>
@@ -23,22 +23,22 @@
                             <v-list-item-title>Home</v-list-item-title>
                             </v-list-item>
                         </v-list>
-                    </v-navigation-drawer>
+                    </v-navigation-drawer> -->
 
-                    <v-toolbar-items d-flex>
+                    <!-- <v-toolbar-items d-flex>
                         <v-img src="../assets/logo/logo_dna.png" width="50px" height="100%"></v-img>
                     </v-toolbar-items>
 
-                    <v-spacer></v-spacer>
+                    <v-spacer></v-spacer> -->
 
-                    <v-toolbar-items class="hidden-sm-and-down">
+                    <v-toolbar-items>
                         <v-btn text v-for="item in menuItems" :key="item.title">
-                        <router-link :to="item.path">{{item.title}}</router-link>
+                        <router-link class="router-link" :to="item.path">{{item.title}}</router-link>
                         </v-btn>
                     </v-toolbar-items>
                 </v-toolbar>
             </div>
-        </div> -->
+        </div>
     </div>
 </template>
 
@@ -51,9 +51,10 @@ export default {
                 { path: "/", name: "Home", title: "Home"},
                 { path: "/about", name: "About", title: "About"},
                 { path: "/portfolio", name: "Portfolio", title: "Portfolio"},
-                { path: "/service", name: "Service", title: "Service"}
+                { path: "/service", name: "Service", title: "Service"},
+                { path: "/contact-us", name: "ContactUs", title: "Contact"}
 
-            ]
+            ],
         };
     },
     methods:{
@@ -121,6 +122,10 @@ export default {
         font-family: 'Roboto';
         display: inherit;
         
+    }
+    .router-link { 
+        text-decoration: none;
+        color: #000000;
     }
 
 

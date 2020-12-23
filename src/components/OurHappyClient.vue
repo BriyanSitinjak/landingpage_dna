@@ -14,10 +14,15 @@
                         <img v-on:click="gotoLivera" src="../assets/images/logo_livera.png">
                         <img src="../assets/images/logo_wvi.png">
                         <img v-on:click="gotoAtmajaya" src="../assets/images/logo_atmajaya.png">
+                        <!-- <v-row>
+                            <v-col v-for="(n, i) in sourceImages" :key="i">
+                                <v-img :src="`${n}`"></v-img>
+                            </v-col>
+                        </v-row> -->
                     </div>
                 </div>
             </div>
-            <div class="img-arrow img-arrow-two">
+            <div class="img-arrow-two">
                 <img src="../assets/logo/icon_back_02.png">
                 <img src="../assets/logo/icon_next_02.png">
             </div>
@@ -27,6 +32,14 @@
 
 <script>
 export default {
+    data: function() {
+        return {
+            // sourceImages : [
+            //     require ('@/assets/images/logo_livera.png'),
+            //     require ('@/assets/images/logo_wvi.png')
+            // ]
+        }
+    },
     methods: {
         gotoLivera : function () {
             window.location.href = '/portfolio'
@@ -119,13 +132,10 @@ export default {
     }
     .logo-scroll-client {
         height: 100px;
+        overflow-x: scroll;
     }
     .img-arrow-two {
-        position: relative;
-        top: 0px;
-        margin-left: 350px;
-        width: 40px;
-        height: 40px;
+        display: none;
     }
 }
 

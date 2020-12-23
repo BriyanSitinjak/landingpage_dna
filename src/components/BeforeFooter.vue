@@ -81,4 +81,41 @@ export default {
     margin: 23px 0px 0px 150px;
 }
 
+@media (min-width: 200px) and (max-width: 600px) {
+    .before-footer {
+        left: 0px;
+        font-family: 'Roboto';
+    }
+    .img-before-footer {
+        width: 30%;
+        height: 30%;
+        margin: auto;
+        float: left;
+        margin-left: 165px;
+    }
+    .content-before-footer {
+        margin: auto;
+    }
+    .title-before-content > h2 {
+        font-size: 24px;
+    }
+    .title-before-content > p {
+        font-size: 12px;
+    }
+    .btn-before-content > a{
+        font-size: 18px;
+        margin: 12px 0px 0px 15px ;
+    }
+    .btn-before-content > img {
+        margin: 21px 0px 0px 125px;
+        width: 9%;
+        height: 4%;
+    }
+    .btn-before-content {
+        width: 150px;
+        height: 45px;
+    }
+
+}
+
 </style>
