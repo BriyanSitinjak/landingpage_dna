@@ -112,7 +112,7 @@ export default {
     margin-left: 996px;
 }
 
-@media (min-width: 200px) and (max-width: 960px) {
+@media (min-width: 200px) and (max-width: 600px) {
     .client-menu {
         left: 0px;
         height: 280px;
@@ -126,8 +126,8 @@ export default {
         width: 500px;
     }
     .logo-size-client {
-        width: 50%;
-        height: 50%;
+        width: 10%;
+        height: 60%;
         display: flex;
     }
     .logo-scroll-client {

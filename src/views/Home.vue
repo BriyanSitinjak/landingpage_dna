@@ -41,18 +41,24 @@
                     <img class="img-service" src="../assets/images/line.png" alt="Line">
                     <div class="mid-icon">
                         <div class="mid-icon-content">
-                            <div class="icon img-ui">
-                                <img src="../assets/images/uiux_dev.png" alt="UIUX">
+                            <div class="ui-ux-images">
+                                <div class="icon img-ui">
+                                    <img src="../assets/images/uiux_dev.png" alt="UIUX">
+                                </div>
+                                <p> class="text txt-ui">UI/UX Design</p>
                             </div>
-                            <p class="text txt-ui">UI/UX Design</p>
-                            <div class="icon img-web">
-                                <img src="../assets/images/website_dev.png" alt="Website">
+                            <div class="web-images">
+                                <div class="icon img-web">
+                                    <img src="../assets/images/website_dev.png" alt="Website">
+                                </div>
+                                <p class="text txt-web">Website Development</p>
                             </div>
-                            <p class="text txt-web">Website Development</p>
-                            <div class="icon img-mobile">
-                                <img src="../assets/images/mobile_dev.png" alt="Mobile">
+                            <div class="mobile-images">
+                                <div class="icon img-mobile">
+                                    <img src="../assets/images/mobile_dev.png" alt="Mobile">
+                                </div>
+                                <p class="text txt-mobile">Mobile Apps Development</p>
                             </div>
-                            <p class="text txt-mobile">Mobile Apps Development</p>
                         </div>
                     </div>
                 </div>
@@ -61,18 +67,22 @@
                 <div class="project-menu-wrapper">
                     <p>Our Project</p>
                     <div class="line-project"></div>
-                    <div class="our-project-content">
-                        <div class="img-project-livera">
-                            <img src="../assets/images/livera_box.png" alt="Livera">
-                            <p class="txt-project">C-PRO</p>
-                        </div>
-                        <div class="img-project-kolita">
-                            <img src="../assets/images/box_default.png" alt="Kolita">
-                            <p class="txt-project">Atmajaya (KOLITA)</p>
-                        </div>
-                        <div class="img-project-wvi">
-                            <img src="../assets/images/box_default.png" alt="Binbank">
-                            <p class="txt-project">Binbank (WVI)</p>
+                    <div class="scroll-project">
+                        <div class="project-scroll-content">
+                            <div class="our-project-content">
+                                <div class="img-project-livera">
+                                    <img src="../assets/images/livera_box.png" alt="Livera">
+                                    <p class="txt-project">C-PRO</p>
+                                </div>
+                                <div class="img-project-kolita">
+                                    <img src="../assets/images/box_default.png" alt="Kolita">
+                                    <p class="txt-project">Atmajaya (KOLITA)</p>
+                                </div>
+                                <div class="img-project-wvi">
+                                    <img src="../assets/images/box_default.png" alt="Binbank">
+                                    <p class="txt-project">Binbank (WVI)</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="img-arrow">
@@ -326,8 +336,13 @@ export default {
     transform: rotate(90deg);
 }
 
+.project-scroll-content {
+    width: 1800px;
+    height: 100px;
+}
+
 .our-project-content {
-    width: 422px;
+    width: 100px;
     height: 265px;
     float: left;
 }
@@ -402,9 +417,6 @@ export default {
         margin-top: -2px;
     }
     /*-------------------- MIDDLE WRAPPER-------------------- */
-    .mid-wrapper {
-        /* border:2px solid red; */
-    }
     .mid {
         padding: 0px;
         margin: 0px;
@@ -428,7 +440,6 @@ export default {
         width: 75px;
         text-align: center;
         margin-left: 50px;
-        /* border: 2px solid red; */
     }
     .content-clients > p.txt-content {
         margin-left: 65px;
@@ -441,6 +452,65 @@ export default {
     }
     .content-clients {
         margin-left: 270px;
+    }
+
+    /*-------------------- SERVICE WRAPPER-------------------- */
+    .service-wrapper {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .service-wrapper {
+        margin-left:-500px;
+        padding-left: 100px;
+    }
+    .txt-service {
+        font-size: 20px;
+    }
+    .ui-ux-images {
+        position: absolute;
+        margin: 0px;
+        top: 0px;
+    }
+    /* .mid-service {
+        position: absolute;
+        margin-left: 0px;
+    } */
+
+    /*-------------------- OUR PROJECT WRAPPER-------------------- */
+    .project-menu-wrapper > p{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .line-project {
+        width: 300px;
+        margin: -150px 0px 0px -30px;
+    }
+
+    .img-project-livera, .img-project-kolita, .img-project-wvi {
+        margin-left: 170px;
+    }
+
+    .our-project-content > div > img {
+        border: 2px solid red;
+        width: 50%;
+        height: 50%;
+    }
+
+    .img-project-livera {
+        margin-top: -90px;
+    }
+    .img-project-kolita {
+        margin-top: 90px;
+    }
+    .img-project-wvi {
+        margin-top: 270px;
+    }
+
+    .txt-project {
+        font-size: 20px;
+        margin-top: -10px;
     }
 }
 
