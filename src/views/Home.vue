@@ -45,7 +45,7 @@
                                 <div class="icon img-ui">
                                     <img src="../assets/images/uiux_dev.png" alt="UIUX">
                                 </div>
-                                <p> class="text txt-ui">UI/UX Design</p>
+                                <p class="text txt-ui">UI/UX Design</p>
                             </div>
                             <div class="web-images">
                                 <div class="icon img-web">
@@ -462,21 +462,42 @@ export default {
 
     .service-wrapper {
         margin-left:-500px;
+        margin-top: 50px;
         padding-left: 100px;
     }
     .txt-service {
         font-size: 20px;
     }
+    .icon {
+        margin-top: 150px;
+        /* border: 2px solid red; */
+    }
+    .mid-icon-content {
+        width: 70%;
+        height:70%;
+    }
     .ui-ux-images {
-        position: absolute;
-        margin: 0px;
+        margin-left: -210px;
         top: 0px;
     }
-    /* .mid-service {
-        position: absolute;
-        margin-left: 0px;
-    } */
-
+    .img-ui {
+        margin-left: -20px;
+        width: 120px;
+        height: 100px;
+    }
+    .img-web {
+        margin-left: -210px;
+        width: 100px;
+        height: 100px;
+    }
+    .img-mobile {
+        margin-left: -200px;
+        width: 100px;
+        height: 100px;
+    }
+    .text{
+        display: none;
+    }
     /*-------------------- OUR PROJECT WRAPPER-------------------- */
     .project-menu-wrapper > p{
         font-size: 20px;
@@ -493,7 +514,6 @@ export default {
     }
 
     .our-project-content > div > img {
-        border: 2px solid red;
         width: 50%;
         height: 50%;
     }

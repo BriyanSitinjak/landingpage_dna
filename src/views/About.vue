@@ -68,7 +68,6 @@
                                 <v-col>
                                     <v-img
                                     src="../assets/images/img_mid_about_03.png"
-                                    height="405px"
                                     class="second-img-team"
                                     ></v-img>
                                 </v-col>
@@ -288,6 +287,8 @@ export default {
 
 .second-img-team {
     margin-left: 30px;
+    height: 98%;
+
 }
 
 /*--------------------JOIN US ABOUT-------------------- */
@@ -344,10 +345,123 @@ export default {
     color: #5E2CB0;
 }
 
-@media (min-width: 200px) and (max-width: 960px) {
+
+
+
+
+@media (min-width: 200px) and (max-width: 600px) {
     .about-container {
         left: 0px;
     }
-}
+    .about-header-wrapper > h2 {
+        font-size: 20px;
+        width: 110%;
+        height: 30%;
+        margin-top: -150px;
+        margin-left: 150px;
+    }
+    .about-header-wrapper > p{
+        font-size: 10px;
+        width: 70%;
+        margin-left: 190px;
+        margin-top: -22px;
+    }
+    /*--------------------MIDDLE ABOUT-------------------- */
+    .content-mid-about > h4 {
+        margin-top: 140px;
+        margin-left: 0px;
+        font-size: 20px;
+        width: 30%;
+    }
+    .content-mid-about > p {
+        margin-top: -25px;
+        margin-left: 250px;
+        font-size: 12px;
+        width: 10%;
+        text-align: right;
+    }
+    /*--------------------OUR STORY  ABOUT-------------------- */
+    .content-about-bigtext > h2 {
+        text-align: center;
+        width: 10%;
+        font-size: 20px;
+        margin: 0px;
+        margin-left: 115px;
+        margin-top: 5px;
+    }
+    .line-about-wrapper {
+        margin: 0px;
+        margin-top: 60px;
+        margin-left: 15px;
+        width:370px;
+        border: 2px solid #ffffff;
+        transform: rotate(180deg);
+    }
+    .content-about-childtext > p {
+        margin-left: 20px;
+        margin-top: 75px;
+        font-size: 12px;
+        width: 20%;
+    }
 
+    /*--------------------OUR TEAM ABOUT-------------------- */
+    .text-team > p{
+        position: absolute;
+        margin-left: -100px;
+        margin-top: -60px;
+        width: 8%;
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .line-team-about {
+        position: absolute;
+        padding-top: -30px;
+        margin-left: 150px;
+        width: 225px;
+    }
+    .first-img-about {
+        width: 22%;
+        height: 22%;
+    }
+    .second-img-about {
+        width: 22%;
+        height: 100%;
+    }
+    .second-img-team {
+        margin-left: 0px;
+        width: 100%;
+        height: 135px;
+    }
+
+    /*--------------------JOIN US ABOUT-------------------- */
+    .content-join-us {
+        margin: 0px;
+        margin: 2px;
+    }
+    .text-join-us > h4 {
+        font-size: 15px;
+    }
+    .text-join-us > p {
+        font-size: 15px;
+    }
+    .content-btn-join-us {
+        width: 70%;
+    }
+    .content-btn-join-us > a {
+        position: relative;
+        font-size: 16px;
+        width: 80%;
+        height: 80%;
+    }
+    .join-us {
+        padding-bottom: 15px;
+        color: #5E2CB0;
+    }
+    .content-btn-join-us > img {
+        width: 13%;
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+}
 </style>

@@ -12,7 +12,7 @@
         <div class="nav-bar">
             <div class="nav-bar-wrapper">
                 <v-toolbar id="navbar">
-                    <v-app-bar-nav-icon class="hidden-md-and-up" @click="sidebar = !sidebar"></v-app-bar-nav-icon>
+                    <v-app-bar-nav-icon x-small dense class="hidden-md-and-up" @click="sidebar = !sidebar"></v-app-bar-nav-icon>
                     <!-- <v-navigation-drawer v-model="sidebar" app dark>
                         <v-list nav dense>
                             <v-list-item v-for="(item, i) in menuItems" exact :key="i" :to="item.path">{{item.title}}</v-list-item>
