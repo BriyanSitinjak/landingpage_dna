@@ -199,4 +199,77 @@ export default {
     height: 77.84px;
 }
 
+@media (min-width: 200px) and (max-width: 600px) {
+    .main-service-bar {
+        left: 0px;
+    }
+    .main-service-container {
+        margin: 0px;
+        margin-top: 50px;
+        margin-left: 28px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+
+    /*-------------------- HOW WE WORK CONTENT-------------------- */
+    .how-we-work-wrapper {
+        width: 22%;
+    }
+    .first-mid-service {
+        padding-top: 25px;
+        height: 10%;
+   }
+    .title-mid-service > p {
+        text-align: center;
+        line-height: 25px;
+        font-size: 20px;
+        width: 40%;
+        margin-top: -105px;
+        margin-left: 60px;
+    }
+    .line-service-content {
+        margin-top: 10px;
+        border: 2px solid #FFFFFF;
+        margin: 0px;
+        margin-left: 110px;
+        width: 50%;
+        transform: rotate(180deg);
+    }
+    .number-text-service {
+        margin: 0px;
+        margin-top: 75px;
+    }
+    .number-text-service > h2 {
+        font-size: 15px;
+        margin-top: -5px;
+        margin-left: 55px;
+    }
+    .number-text-service > p {
+        margin-left: 55px;
+        width: 35%;
+        font-size: 10px;
+        margin-top: 35px;
+    }
+    .service-number {
+        width: 10%;
+        height: auto;
+    }
+    .third-mid-service {
+        margin-left: 290px;
+        margin-top: 175px;
+    }
+    .side-logo-service {
+        margin: 0px;
+        display: list-item;
+        margin-bottom: 125px;
+    }
+    .img-analyst {
+        margin-left: 15px;
+    }
+    .img-design {
+        margin-left: 10px;
+    }
+}
+
 </style>
