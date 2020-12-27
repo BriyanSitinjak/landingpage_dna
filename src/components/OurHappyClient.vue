@@ -42,10 +42,10 @@ export default {
     },
     methods: {
         gotoLivera : function () {
-            window.location.href = '/portfolio'
+            window.location.href = '/second-portfolio'
         },
         gotoAtmajaya : function () {
-            window.location.href = '/second-portfolio'
+            window.location.href = '/portfolio'
         }
     }
 }
