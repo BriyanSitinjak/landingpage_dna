@@ -421,4 +421,11 @@ export default {
     height: 27%;
 }
 
+@media (min-width: 200px) and (max-width: 600px) {
+    .portfolio-container {
+        left: 0px;
+    }
+
+}
+
 </style>

@@ -42,4 +42,16 @@ export default {
     margin-left: 90px;
 }
 
+@media (min-width: 200px) and (max-width: 600px) {
+    .header-portfolio {
+        left: 0px;
+    }
+    .header-content-portfolio {
+        /* border: 2px solid red; */
+        margin: 38px 0px 0px 30px;
+        width: 70%;
+        font-size: 20px;
+    }
+}
+
 </style>
