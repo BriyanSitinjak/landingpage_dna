@@ -38,7 +38,7 @@
                             label="What do you want to tell us?"
                             placeholder="type here"
                             class="text-field textarea"
-                            height="170px"
+                            height="100px"
                             filled
                             ></v-textarea>
                             <a href="/service" class="learn-more button-submit"><span class="text-learn-more">Submit</span></a>
@@ -150,4 +150,58 @@ export default {
     padding: 8px 0px 0px 65px;
     color: #5E2CB0;
 }
+
+
+@media (min-width: 200px) and (max-width: 600px) {
+    .contact-us {
+        left: 0px;
+    }
+    .contact-us-title {
+        margin: 28px;
+        font-size: 12px;
+    }
+    .contact-us-wrapper {
+        margin-left: 275px;
+        width: 70%;
+        height: 80%;
+    }
+    .text-field >>> label {
+        font-size: 12px;
+        height:80%;
+        margin: 0px;
+        margin-top: 12px;
+        margin-left: -13px;
+        top: 0px;
+        padding-top: 0px;
+    }
+
+    .text-field  {
+        height: 30%;
+        padding-bottom: 30px;
+        font-size: 8px;
+    }
+    .textarea >>> label {
+        height:30%;
+        width: 250px;
+        font-size: 9px;
+        margin-left: -26px;
+    }
+    .textarea {
+        height: 40%;
+        margin-top: 100px;
+    }
+    .button-submit {
+        margin: 0px;
+        margin-top: 62px;
+        width: 100%;
+        height: 25%;
+    }
+    .text-learn-more {
+        font-size: 10px;
+        padding: 0px;
+        margin-top: -12px;
+        margin-left: 40px;
+    }
+}
+
 </style>
