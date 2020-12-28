@@ -120,19 +120,21 @@ export default {
 
     .client-menu-wrapper {
         margin: 10px;
+        
     }
     .line-client {
         left: 175px;
         width: 500px;
     }
     .logo-size-client {
-        width: 10%;
-        height: 60%;
+        width: 100%;
+        height: 68%;
         display: flex;
     }
     .logo-scroll-client {
-        height: 100px;
+        height: 125px;
         overflow-x: scroll;
+        /* border: 2px solid red; */
     }
     .img-arrow-two {
         display: none;

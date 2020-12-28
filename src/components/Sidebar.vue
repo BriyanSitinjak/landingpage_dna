@@ -112,7 +112,7 @@ export default {
 .logo , .logo-dna{
     cursor: pointer;
 }
-@media (min-width: 200px) and (max-width: 960px) {
+@media (min-width: 200px) and (max-width: 600px) {
     .sidebar-fixed {
         display: none;
     }
@@ -127,7 +127,5 @@ export default {
         text-decoration: none;
         color: #000000;
     }
-
-
 }
 </style>

@@ -474,9 +474,10 @@ export default {
         width: 41.5%;
         text-align: justify;
         margin:0px;
-        margin-left: 3px;
+        margin-left: 0px;
         font-size: 8px;
         line-height: 13px;
+        padding: 0px 10px;
     }
 
 
@@ -485,7 +486,7 @@ export default {
         margin: 0px;
     }
     .atmajaya-portfolio-two {
-        margin-top: 38px;
+        margin-top: 75px;
     }
 
 

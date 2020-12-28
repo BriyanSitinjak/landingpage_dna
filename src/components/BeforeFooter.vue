@@ -103,13 +103,13 @@ export default {
         font-size: 12px;
     }
     .btn-before-content > a{
-        font-size: 18px;
+        font-size: 15px;
         margin: 12px 0px 0px 15px ;
     }
     .btn-before-content > img {
-        margin: 21px 0px 0px 125px;
-        width: 9%;
-        height: 4%;
+        margin: 17px 0px 0px 115px;
+        width: 13%;
+        height: auto;
     }
     .btn-before-content {
         width: 150px;

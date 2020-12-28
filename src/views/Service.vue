@@ -239,6 +239,7 @@ export default {
     .number-text-service {
         margin: 0px;
         margin-top: 75px;
+        margin-left: 25px;
     }
     .number-text-service > h2 {
         font-size: 15px;
@@ -256,19 +257,19 @@ export default {
         height: auto;
     }
     .third-mid-service {
-        margin-left: 290px;
+        margin-left: 300px;
         margin-top: 175px;
     }
     .side-logo-service {
         margin: 0px;
         display: list-item;
-        margin-bottom: 125px;
+        margin-bottom: 156px;
+        width: 18%;
+        height: auto;
     }
     .img-analyst {
-        margin-left: 15px;
-    }
-    .img-design {
-        margin-left: 10px;
+        width: 15%;
+        height: auto;
     }
 }
 
