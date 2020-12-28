@@ -9,21 +9,44 @@
                 <img v-on:click="gotoInstagram" class="logo logo-instagram" src="../assets/logo/logo_instagram.png" alt="Instagram">
             </div>
         </div>
-        <div class="nav-bar">
+        <div class="nav-bar" app>
             <div class="nav-bar-wrapper">
-                <v-toolbar id="navbar">
-                    <v-app-bar-nav-icon x-small dense class="hidden-md-and-up" @click="sidebar = !sidebar"></v-app-bar-nav-icon>
-                    <!-- <v-navigation-drawer v-model="sidebar" app dark>
-                        <v-list nav dense>
+                <v-toolbar id="navbar" app>
+                    <v-app-bar-nav-icon x-small dense class="navbar-sidebar" @click="sidebar = !sidebar"></v-app-bar-nav-icon>
+                    <v-navigation-drawer v-model="sidebar" app dark>
+                        <v-list nav dense width="100%" height="auto">
                             <v-list-item v-for="(item, i) in menuItems" exact :key="i" :to="item.path">{{item.title}}</v-list-item>
-                            <v-list-item>
+                            <div class="navbar-logo-wrapper">
+                                <div class="navbar-logo linkedin-content">
+                                    <v-img
+                                    src="../assets/logo/logo_linkedin.png"
+                                    width="100%"
+                                    v-on:click="gotoLinkedin"
+                                    ></v-img>
+                                </div>
+                                <div class="navbar-logo facebook-content">
+                                    <v-img
+                                    src="../assets/logo/logo_facebook.png"
+                                    width="100%"
+                                    v-on:click="gotoFacebook"
+                                    ></v-img>
+                                </div>
+                                <div class="navbar-logo instagram-content">
+                                    <v-img
+                                    src="../assets/logo/logo_instagram.png"
+                                    width="100%"
+                                    v-on:click="gotoInstagram"
+                                    ></v-img>
+                                </div>
+                            </div>
+                            <!-- <v-list-item>
                                 <v-list-item-icon>
                                     <v-icon>mdi-home</v-icon>
                                 </v-list-item-icon>
                             <v-list-item-title>Home</v-list-item-title>
-                            </v-list-item>
+                            </v-list-item> -->
                         </v-list>
-                    </v-navigation-drawer> -->
+                    </v-navigation-drawer>
 
                     <!-- <v-toolbar-items d-flex>
                         <v-img src="../assets/logo/logo_dna.png" width="50px" height="100%"></v-img>
@@ -31,11 +54,11 @@
 
                     <v-spacer></v-spacer> -->
 
-                    <v-toolbar-items>
+                    <!-- <v-toolbar-items>
                         <v-btn text v-for="item in menuItems" :key="item.title">
                         <router-link class="router-link" :to="item.path">{{item.title}}</router-link>
                         </v-btn>
-                    </v-toolbar-items>
+                    </v-toolbar-items> -->
                 </v-toolbar>
             </div>
         </div>
@@ -112,6 +135,8 @@ export default {
 .logo , .logo-dna{
     cursor: pointer;
 }
+
+
 @media (min-width: 200px) and (max-width: 600px) {
     .sidebar-fixed {
         display: none;
@@ -121,11 +146,29 @@ export default {
         position: relative;
         font-family: 'Roboto';
         display: inherit;
-        
+    }
+    .nav-bar-wrapper {
+        /* border: 2px red solid; */
+        position: relative;
+        height:100%;
     }
     .router-link { 
         text-decoration: none;
-        color: #000000;
+        color:  #5E2CB0;
+    }
+    .navbar-logo-wrapper {
+        float: left;
+        margin-left: 10px;
+        border: 5px solid white;
+    }
+    .navbar-logo {
+        float: left;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    .navbar-sidebar {
+        height: 10px;
     }
 }
 </style>

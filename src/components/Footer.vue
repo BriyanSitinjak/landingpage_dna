@@ -13,7 +13,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id et egestas dui libero et eget neque. Consequat fusce justo, diam sed. Scelerisque mus vitae varius ut non volutpat mattis eleifend proin. Turpis eget odio lectus nunc imperdiet. Vitae convallis commodo dui sollicitudin viverra congue. Quis gravida tincidunt sed quis ultrices habitasse. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id et egestas dui libero et eget neque. Consequat fusce justo, diam sed. Scelerisque mus vitae varius ut non volutpat mattis eleifend proin. Turpis eget odio lectus nunc imperdiet. Vitae convallis commodo dui sollicitudin viverra congue. Quis gravida tincidunt sed quis ultrices habitasse.</p>
                 </div>
             </v-col>
-            <v-col cols="12" sm="12" md="1" lg="1" xl="1" class="footer-two">
+            <v-col class="footer-two" cols="12" sm="12" md="1" lg="1" xl="1">
                 <div class="first-footer-two">
                     <h5>SITEMAP</h5>
                     <ul>
@@ -66,7 +66,6 @@ export default {
 
 <style scoped>
 .menu-footer {
-    /* position: absolute; */
     font-family: 'Roboto';
     background-image: url('../assets/images/footer_home.png');
     background-repeat: no-repeat;
@@ -75,16 +74,12 @@ export default {
     margin-left: 70px;
     padding-left: 50px;
     padding-top: 25px;
-    /* color: #000000; */
 }
 
 /*--------------------ROW1COL1 WRAPPER-------------------- */
 .footer-one {
     line-height: 16px;
-    /* border: 2px solid red; */
     padding: 0;
-    /* margin: 0; */
-    /* margin-left: 70px; */
     color: #FFFFFF;
 }
 
@@ -93,7 +88,6 @@ export default {
 }
 
 .first-footer-one {
-    /* border: 2px solid black; */
     width: 375px;
     font-weight: bold;
     font-size: 24px;
@@ -104,14 +98,12 @@ export default {
     width: 375px;
     font-size: 18px;
     margin-bottom: 10px;
-    /* border: 2px solid black; */
 }
 
 .third-footer-one {
     width: 375px;
     font-size: 14px;
     text-align: left;
-    /* border: 2px solid black; */
 }
 
 /*--------------------ROW2COL2 WRAPPER-------------------- */
@@ -120,21 +112,16 @@ export default {
     font-size: 18px;
     line-height: 21px;
     margin-top: 95px;
-    /* border: 2px solid red;  */
-    /* padding-left: -100px; */
 }
 
 .first-footer-two > h5 {
     margin-bottom: 35px;
-    /* border: 2px solid black; */
     width: 100px;
 }
 
 .first-footer-two > ul > li a{
     color: #FFFFFF;
     text-decoration: none;
-    /* color: black; */
-    /* border: 2px solid black; */
     width: 100px;
 }
 
@@ -147,9 +134,6 @@ export default {
 
 /*--------------------ROW3COL3 WRAPPER-------------------- */
 .first-footer-three {
-    /* width: 301px;
-    height: 302px; */
-    /* border: 2px solid red;    */
     margin-top: 95px;
     color: #FFFFFF;
     font-size: 16px;
@@ -179,7 +163,6 @@ export default {
     width: 350px;
     height: 100px;
     margin-left: 30px;
-    /* border: 2px solid red; */
 }
 
 .mail-section {
@@ -220,87 +203,88 @@ export default {
     .footer-one, .footer-two, .footer-three {
         font-size: 15px;
         text-align:center;
-        /* margin-left: 0px; */
         background-image: url('../assets/images/footer_home.png');
-        
     }
+
+
     .footer-one {
-        margin: auto;
-        padding: 0;
-        margin: 0;
-        top: 0px;
-        /* padding-left: 30px; */
+        position: absolute;
+        width: 100%;
+        height: auto;
+        margin-left: -39px;
     }
     .first-footer-one > p {
-        margin: auto;
         text-align: center;
-        /* font-size: 20px; */
     }
     .first-footer-one, .second-footer-one, .third-footer-one {
         margin: auto;
         text-align: justify;
-        /* margin-left: -10px; */
     }
 
 
     .footer-two {
         position: absolute;
+        width: 100%;
+        height: auto;
         margin-left: -38px;
-        padding-left: 45px;
         margin-top: 400px;
-        /* margin: auto; */
-        /* margin-left: -70px; */
     }
     .first-footer-two {
         margin: auto;
     }
     .first-footer-two > h5 {
         margin: auto;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
         font-size: 18px;
     }
     .first-footer-two > ul > li {
-        margin-bottom: 15px;
+        margin-bottom: 12px;
     }
 
 
     .footer-three {
         position: absolute;
+        width: 100%;
+        height: auto;
         margin-top: 605px;
-        /* margin: auto; */
-        margin-left: -40px;
-        padding-left: 42px;
-        /* margin-left: -70px; */
+        margin-left: -38px;
     }
     .first-footer-three {
         margin: auto;
-        /* padding-left: 30px; */
+        text-align: center;
     }
     .first-footer-three > h5 {
-        margin-left: 10px;
         font-size: 18px;
     }
     .map-section {
-        margin: auto;
         text-align: center;
-        /* padding-right: 10px; */
+        width: 100%;
     }
     .content-map-section {
         margin: auto;
         text-align: center;
-        /* padding-right: 25px; */
-        margin-bottom: 20px;
-        margin-left: -21px;
+        margin-bottom: 32px;
+    }
+    .content-map-section > p {
+        text-align: center;
     }
     .icon-footer { 
         margin: auto;
-        margin-left: -6px;
+        margin-left: -13px;
+    }
+    .mail-linkedin-facebook-section {
+        width: 100%;
+    }
+    .mail-linkedin-facebook-section > div > img {
+        margin-top: -20px;
     }
     .mail-section, .facebook-section, .linkedin-section {
         margin: auto;
     }
     .content-last-footer-section {
-        margin-left: 10px;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
     }
 }
 
