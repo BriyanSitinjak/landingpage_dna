@@ -455,10 +455,6 @@ export default {
     }
 
     /*-------------------- SERVICE WRAPPER-------------------- */
-    .service-wrapper {
-        padding: 0px;
-        margin: 0px;
-    }
 
     .service-wrapper {
         margin-left:-500px;
@@ -470,19 +466,23 @@ export default {
     }
     .icon {
         margin-top: 150px;
-        /* border: 2px solid red; */
+        width: 150%;
+        margin-left: 100px;
+    }
+    .icon > img {
+        width: 85%;
     }
     .mid-icon-content {
-        width: 70%;
-        height:70%;
+        width: 80%;
+        height:80%;
     }
     .ui-ux-images {
         margin-left: -210px;
         top: 0px;
     }
     .img-ui {
-        margin-left: -20px;
-        width: 120px;
+        margin-left: 5px;
+        width: 100px;
         height: 100px;
     }
     .img-web {
@@ -495,8 +495,23 @@ export default {
         width: 100px;
         height: 100px;
     }
-    .text{
-        display: none;
+    .txt-ui{
+        margin-left: -45px;
+        font-size: 12px;
+        color: black;
+    }
+    .txt-web {
+        margin-left: -425px;
+        font-size: 12px;
+        width:8%;
+        color: black
+    }
+    .txt-mobile {
+        font-size: 12px;
+        margin-left: -668px;
+        width: 8%;
+        /* border: 2px solid red; */
+        color: black
     }
     /*-------------------- OUR PROJECT WRAPPER-------------------- */
     .project-menu-wrapper > p{
