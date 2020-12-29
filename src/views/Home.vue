@@ -498,19 +498,16 @@ export default {
     .txt-ui{
         margin-left: -45px;
         font-size: 12px;
-        color: black;
     }
     .txt-web {
         margin-left: -425px;
         font-size: 12px;
         width:8%;
-        color: black
     }
     .txt-mobile {
         font-size: 12px;
         margin-left: -668px;
         width: 8%;
-        color: black
     }
     /*-------------------- OUR PROJECT WRAPPER-------------------- */
     .project-menu-wrapper > p{
