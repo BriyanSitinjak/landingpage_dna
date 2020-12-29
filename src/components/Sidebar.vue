@@ -9,12 +9,13 @@
                 <img v-on:click="gotoInstagram" class="logo logo-instagram" src="../assets/logo/logo_instagram.png" alt="Instagram">
             </div>
         </div>
-        <div class="nav-bar" app>
+        <div class="nav-bar">
             <div class="nav-bar-wrapper">
-                <v-toolbar id="navbar" app>
+                <v-toolbar app dark id="navbar">
+                    <!-- <v-toolbar-side-icon @click="sidebar = !sidebar"></v-toolbar-side-icon> -->
                     <v-app-bar-nav-icon x-small dense class="navbar-sidebar" @click="sidebar = !sidebar"></v-app-bar-nav-icon>
-                    <v-navigation-drawer v-model="sidebar" app dark>
-                        <v-list nav dense width="100%" height="auto">
+                    <v-navigation-drawer v-model="sidebar" >
+                        <v-list nav dense width="100%" height="200px">
                             <v-list-item v-for="(item, i) in menuItems" exact :key="i" :to="item.path">{{item.title}}</v-list-item>
                             <div class="navbar-logo-wrapper">
                                 <div class="navbar-logo linkedin-content">
@@ -148,7 +149,6 @@ export default {
         display: inherit;
     }
     .nav-bar-wrapper {
-        /* border: 2px red solid; */
         position: relative;
         height:100%;
     }
