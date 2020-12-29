@@ -510,7 +510,6 @@ export default {
         font-size: 12px;
         margin-left: -668px;
         width: 8%;
-        /* border: 2px solid red; */
         color: black
     }
     /*-------------------- OUR PROJECT WRAPPER-------------------- */

@@ -225,9 +225,10 @@ export default {
     .footer-two {
         position: absolute;
         width: 100%;
-        height: auto;
+        height: 235px;
         margin-left: -38px;
         margin-top: 400px;
+        border-top: 4px solid white;
     }
     .first-footer-two {
         margin: auto;
@@ -246,8 +247,9 @@ export default {
         position: absolute;
         width: 100%;
         height: auto;
-        margin-top: 605px;
+        margin-top: 635px;
         margin-left: -38px;
+        border-top: 4px solid white;
     }
     .first-footer-three {
         margin: auto;
