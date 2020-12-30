@@ -133,7 +133,7 @@ export default {
 }
 
 .main-container > h2 {
-    margin: 10px 0px 0px 30px;
+    margin: 20px 0px 0px 30px;
     font-size: 30px;
     font-weight: bold;
     font-style: normal;
@@ -382,7 +382,7 @@ export default {
 .img-arrow {
     position: absolute;
     display: flex;
-    margin: 200px 0px 50px 1100px;
+    margin: 100px 0px 0px 1100px;
     width: 60px;
     height: 60px;
 }

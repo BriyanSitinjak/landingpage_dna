@@ -1,7 +1,9 @@
 <template>
   <div>
-    <router-view/>
+    
+    <!-- <Sidebar /> -->
     <div>
+      <router-view/>
       <!-- <router-link to="/">Home</router-link> 
       <router-link to="/service">Service</router-link> -->
       
@@ -11,10 +13,12 @@
 
 <script>
 
+// import Sidebar from '@/components/Sidebar.vue'
+
 export default {
   name: 'App',
   components: {
-    //
+    // Sidebar
   },
   data(){
     return {

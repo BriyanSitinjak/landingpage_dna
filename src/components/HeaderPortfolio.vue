@@ -1,5 +1,5 @@
 <template>
-    <div class="header-portfolio">
+    <div class="header-portfolio" app>
         <div class="header-portfolio-wrapper">
             <v-img
                 src="../assets/images/img_header_portfolio.png"
