@@ -1,9 +1,10 @@
 <template>
   <div>
+    <router-view/>
     <div>
       <!-- <router-link to="/">Home</router-link> 
       <router-link to="/service">Service</router-link> -->
-      <router-view/>
+      
     </div>
   </div>
 </template>

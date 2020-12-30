@@ -1,5 +1,5 @@
 <template>
-    <div class=client-menu>
+    <v-container fluid class="client-menu" app>
         <div class="client-menu-wrapper">
             <div class="title-client">
                 <p>OUR HAPPY CLIENT</p>
@@ -27,7 +27,7 @@
                 <img src="../assets/logo/icon_next_02.png">
             </div>
         </div>
-    </div>
+    </v-container>
 </template>
 
 <script>

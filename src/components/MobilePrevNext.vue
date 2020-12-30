@@ -57,11 +57,6 @@ export default {
 </script>
 
 <style scoped>
-.mobile-wrapper {
-    /* border: 2px solid red; */
-}
-.mobile-prev {
-    /* border: 2px solid red; */
-}
+
 
 </style>
