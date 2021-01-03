@@ -73,7 +73,7 @@
                         </div>
                         <div class="prev-next-content">
                             <div class="prev-next-wrapper">
-                                <v-row>
+                                <v-row dense no-gutters>
                                     <v-col>
                                         <div v-on:click="gotoLivera" class="prev-prev-button">
                                             <img src="../assets/images/img_livera_portfolio.png" class="prev-button">
@@ -322,24 +322,19 @@ export default {
 
 /*--------------------PREV BUTTON CONTENT-------------------- */
 .prev-prev-button {
-    border: red solid 2px;
     position: relative;
     cursor: pointer;
     width: 100%;
     height: 170px;
-    top: 0px;
 }
 
 .prev-button {
-    /* border: 2px solid red; */
     position: absolute;
-    /* top: 0px; */
     width: 100%;
     height: 100%;
 }
 
 .prev-content-button {
-    position: absolute;
     width: 100%;
     height: 100%;
     color: #ffffff;
@@ -348,41 +343,38 @@ export default {
 }
 
 .transform-prev {
-    position: relative;
     transform: matrix(-1, 0, 0, 1, 0, 0);
-}
-
-.transform-prev > div {
-    padding-bottom: 10px;
 }
 
 .title-prev {
     font-size: 29px;
-    border: 2px solid red;
     float: right;
-    /* margin: 25px 22px 45px 0px; */
+    margin-top: 25px;
+    margin-right: 25px;
 }
 
 .main-prev {
-    font-size: 20px;
+    float: right;
     display: flex;
+    margin-top: 120px;
+}
+
+.main-prev > h3 {
+    font-size: 23px;
+    margin-right: -165px;
 }
 
 .main-prev > img {
-    margin: 6px 25px 0px 0px;
-    width: 32%;
-    height: 32%;
+    padding-right: 120px;
+    
 }
 
 /*--------------------NEXT BUTTON CONTENT-------------------- */
 .next-next-button {
-    border: 2px solid red;
     position: relative;
     width: 100%;
     height: 170px;
     cursor: pointer;
-    /* top: 0px; */
-    /* margin-left: -18px; */
 }
 
 .next-button {
@@ -393,36 +385,31 @@ export default {
 
 .next-content-button {
     position: absolute;
-    width: 655px;
-    height: 170px;
+    width: 100%;
+    height: 100%;
     color: #ffffff;
     background: linear-gradient(90.02deg, #E9BB16 0.02%, rgba(233, 187, 22, 0.8) 56.97%, rgba(233, 187, 22, 0) 99.99%);
 }
 
-.transform-next {
-    position: absolute;
-}
-
-.transform-next > div {
-    padding-bottom: 10px;
-}
-
 .title-next {
     font-size: 29px;
-    margin: 25px 0px 45px 22px;
+    margin-top: 25px;
+    margin-left: 22px;
 }
 
 .main-next {
-    font-size: 20px;
     margin-left: 22px;
     display: flex;
+    margin-top: 52px;
+}
+
+.main-next > h3 {
+    font-size: 23px;
 }
 
 .main-next > img {
-    margin: 5px 0px 0px 25px;
+    padding-right: 100px;
     transform: rotate(180deg);
-    width: 27%;
-    height: 27%;
 }
 
 @media (min-width: 200px) and (max-width: 600px) {
