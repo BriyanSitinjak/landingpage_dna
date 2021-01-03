@@ -1,6 +1,6 @@
 <template>
     <v-container fluid class="menu-footer"> 
-        <v-row> 
+        <v-row class="row-footer"> 
             <v-col cols="12" sm="12" md="7" lg="7" xl="7" 
             class="footer-one">
                 <div class="first-footer-one">
@@ -54,6 +54,9 @@
                     </div>
                 </div>
             </v-col>
+            <div class="copyright-section">
+                <p>Copyright  ©  2020 Digital Native Agency</p>
+            </div>
         </v-row>
     </v-container>
 </template>
@@ -187,9 +190,11 @@ export default {
 
 .copyright-section {
     position: absolute;
-    margin: 420px 300px 0px 425px;
+    width: 90%;
+    text-align: center;
+    margin-top: 425px;
     color: #FFFFFF;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
 }
 
@@ -276,6 +281,7 @@ export default {
     }
     .mail-linkedin-facebook-section {
         width: 100%;
+        padding-top: 8px;
     }
     .mail-linkedin-facebook-section > div > img {
         margin-top: -20px;
@@ -287,6 +293,9 @@ export default {
         width: 100%;
         margin: auto;
         margin-bottom: 20px;
+    }
+    .copyright-section {
+        display: none;
     }
 }
 

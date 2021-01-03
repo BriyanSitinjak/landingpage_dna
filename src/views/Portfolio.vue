@@ -308,42 +308,47 @@ export default {
 /*--------------------PREV NEXT CONTENT-------------------- */
 .prev-next-content {
     position: relative;
-    width: 1824px;
+    width: 1284px;
     height: 170px;
+    top: 0px;
 }
 
 .prev-next-wrapper {
     position: absolute;
-    width: 1284px;
-    height: 175px;
+    margin-left: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 /*--------------------PREV BUTTON CONTENT-------------------- */
 .prev-prev-button {
+    border: red solid 2px;
+    position: relative;
     cursor: pointer;
-    position: absolute;
-    width: 635px;
+    width: 100%;
     height: 170px;
     top: 0px;
 }
 
 .prev-button {
+    /* border: 2px solid red; */
     position: absolute;
+    /* top: 0px; */
     width: 100%;
     height: 100%;
 }
 
 .prev-content-button {
     position: absolute;
-    width: 635px;
-    height: 170px;
+    width: 100%;
+    height: 100%;
     color: #ffffff;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     background: linear-gradient(90.02deg, #4BADE4 0.02%, rgba(75, 173, 228, 0.6) 56.97%, rgba(75, 173, 228, 0) 99.99%);
 }
 
 .transform-prev {
-    position: absolute;
+    position: relative;
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
@@ -353,7 +358,9 @@ export default {
 
 .title-prev {
     font-size: 29px;
-    margin: 25px 22px 45px 0px;
+    border: 2px solid red;
+    float: right;
+    /* margin: 25px 22px 45px 0px; */
 }
 
 .main-prev {
@@ -369,12 +376,13 @@ export default {
 
 /*--------------------NEXT BUTTON CONTENT-------------------- */
 .next-next-button {
-    position: absolute;
-    /* margin-left: 20px; */
-    width: 655px;
+    border: 2px solid red;
+    position: relative;
+    width: 100%;
     height: 170px;
-    top: 0px;
-    margin-left: -20px;
+    cursor: pointer;
+    /* top: 0px; */
+    /* margin-left: -18px; */
 }
 
 .next-button {

@@ -223,10 +223,14 @@ export default {
     margin-left: 55px;
     color: #5E2CB0;
 }
+.content-projects > p.txt-number {
+    margin-left: 53px;
+}
 
 .content-clients > p.txt-number {
-    margin-left: 50px;
+    margin-left: 43px;
 }
+
 
 /*-------------------- SERVICE WRAPPER-------------------- */
 .mid-service {
@@ -250,10 +254,11 @@ export default {
 }
 
 .txt-service {
-    font-weight: 500;
     font-size: 28px;
     margin: auto;
-    width: 46%;
+    width: 100%;
+    margin-left: 10px;
+    padding-left: 490px;
     color: #5B2CB2;
 }
 
@@ -383,8 +388,8 @@ export default {
     position: absolute;
     display: flex;
     margin: 100px 0px 0px 1100px;
-    width: 60px;
-    height: 60px;
+    width: 12%;
+    height: 12%;
 }
 
 @media (min-width: 200px) and (max-width: 600px) {
@@ -444,8 +449,14 @@ export default {
     .content-clients > p.txt-content {
         margin-left: 65px;
     }
+    .content-projects > p.txt-number {
+        margin-left: 27px;
+    }
+    .content-clients > p.txt-number {
+        padding-left: 13px;
+    }
     .content-years{
-        margin-left: -30px;
+        margin-left: -20px;
     }   
     .content-projects {
         margin-left: 125px;
@@ -453,11 +464,10 @@ export default {
     .content-clients {
         margin-left: 270px;
     }
-
     /*-------------------- SERVICE WRAPPER-------------------- */
 
     .service-wrapper {
-        margin-left:-500px;
+        margin-left:-530px;
         margin-top: 50px;
         padding-left: 100px;
     }

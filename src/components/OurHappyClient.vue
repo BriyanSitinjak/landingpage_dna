@@ -106,8 +106,8 @@ export default {
 .img-arrow-two {
     position: absolute;
     display: flex;
-    width: 60px;
-    height: 60px;
+    width: 18%;
+    height: 18%;
     margin-top: 10px;
     margin-left: 996px;
 }

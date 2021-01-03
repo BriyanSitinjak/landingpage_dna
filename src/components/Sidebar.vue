@@ -25,14 +25,14 @@
             <div class="nav-bar-wrapper">
                 <v-toolbar dark id="navbar">
                     <v-app-bar-nav-icon x-small class="navbar-sidebar" @click="sidebar = !sidebar"></v-app-bar-nav-icon>
-                    <v-navigation-drawer dark absolute temporary v-model="sidebar">
+                    <v-navigation-drawer app dark absolute temporary v-model="sidebar">
                         <v-list nav width="100%" height="1000px">
                             <v-list-item v-for="(item, i) in menuItems" exact :key="i" :to="item.path">{{item.title}}</v-list-item>
                             <div class="navbar-logo-wrapper">
                                 <div class="navbar-logo linkedin-content">
                                     <v-img
                                     src="../assets/logo/logo_linkedin.png"
-                                    width="100%"
+                                    width="100%" 
                                     v-on:click="gotoLinkedin"
                                     ></v-img>
                                 </div>
@@ -161,6 +161,10 @@ export default {
 }
 
 @media (min-width: 200px) and (max-width: 600px) {
+    #navbar {
+        z-index: -1;
+    }
+
     .sidebar-fixed {
         display: none;
     }
