@@ -417,7 +417,6 @@ export default {
         left: 0px;
     }
     .main-portfolio {
-        /* border: 2px solid red; */
         text-align: center;
     }
     .content-mid-portfolio {
@@ -512,7 +511,93 @@ export default {
 
 
     /*--------------------PREV NEXT CONTENT-------------------- */
+    .prev-next-content {
+        /* position: relative; */
+        left: 0px;
+        width: 600px;
+    }
 
+    .prev-next-wrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+    }
+
+    /*--------------------PREV BUTTON CONTENT-------------------- */
+    .prev-prev-button {
+        width:75%;
+    }
+
+    .prev-button {
+        width: 220px;
+        height: 120px;
+        margin-top: 25px;
+    }
+
+    .title-prev {
+        font-size: 20px;
+    }
+
+    .main-prev {
+        float: right;
+        display: flex;
+        margin-top: 125px;
+        margin-right: 18px;
+    }
+    .main-prev > h3 {
+        margin: 0px;
+        padding: 0px;
+        margin-right: -150px;
+        padding-left: 30px;
+        font-size: 18px;
+    }
+
+    .main-prev > img {
+        margin: 0px;
+        padding: 0px;
+        width: 40px;
+        height: 10px;
+        margin-top: 7px;
+    }
+
+    /*--------------------NEXT BUTTON CONTENT-------------------- */
+    .next-next-button {
+        display: flex;
+        left: -75px;
+        width: 75%;
+    }
+    
+    .next-button {
+        width: 220px;
+        height: 120px;
+        margin-top: 25px;
+    }
+
+    .title-next {
+        font-size: 20px;
+    }
+
+    .main-next {
+        float: right;
+        display: flex;
+        margin-top: 70px;
+        margin-right: 65px;
+    }
+    .main-next > h3 {
+        margin: 0px;
+        padding: 0px;
+        font-size: 18px;
+        margin-right: 21px;
+    }
+
+    .main-next > img {
+        margin: 0px;
+        width: 40px;
+        padding: 0px;
+        height: 10px;
+        margin-top: 7px;
+    }
 }
 
 </style>
