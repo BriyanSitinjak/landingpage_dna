@@ -44,9 +44,10 @@ export default {
 }
 
 .content-before-footer {
+    /* border: 2px solid red; */
     position: absolute;
     color: #ffffff;
-    margin: 80px 0px 0px 65px;
+    margin: 80px 0px 0px 105px;
 }
 
 .title-before-content > h2 {

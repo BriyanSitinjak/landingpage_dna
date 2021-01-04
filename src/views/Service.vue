@@ -91,7 +91,7 @@ export default {
     line-height: 50px;
     color: #ffffff;
     top: 0px;
-    margin: 150px 0px 220px 90px;
+    margin: 150px 0px 0px 120px;
 }
 
 /*-------------------- MIDDLE SERVICE WRAPPER-------------------- */
@@ -109,9 +109,10 @@ export default {
 }
 
 .title-mid-service {
+    /* border: 2px solid red; */
     width: 375px;
     height: 132px;
-    margin: 104px 0px 0px 75px;
+    margin: 104px 0px 0px 118px;
     font-size: 50px;
     line-height: 60px;
     color: #FFFFFF;
@@ -199,7 +200,7 @@ export default {
     height: 77.84px;
 }
 
-@media (min-width: 200px) and (max-width: 600px) {
+@media (min-width: 200px) and (max-width: 960px) {
     .main-service-bar {
         left: 0px;
     }
@@ -224,15 +225,14 @@ export default {
         text-align: center;
         line-height: 25px;
         font-size: 20px;
-        width: 40%;
-        margin-top: -105px;
-        margin-left: 60px;
+        width: 47%;
+        margin-top: -100px;
     }
     .line-service-content {
         margin-top: 10px;
         border: 2px solid #FFFFFF;
         margin: 0px;
-        margin-left: 110px;
+        margin-left: 105px;
         width: 50%;
         transform: rotate(180deg);
     }

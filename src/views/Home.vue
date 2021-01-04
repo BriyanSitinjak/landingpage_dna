@@ -67,14 +67,13 @@
             </div>
             <div class="project-menu">
                 <div class="project-menu-wrapper">
-                    <div class="title-project-menu"></div>
                     <p>Our Project</p>
                     <div class="line-project"></div>
                     <div class="scroll-project">
                         <div class="project-scroll-content">
                             <div class="our-project-content">
                                 <div class="img-project-livera">
-                                    <img src="../assets/images/livera_box.png">
+                                    <img v-on:click="gotoLivera" src="../assets/images/livera_box.png">
                                     <p class="txt-project">C-PRO</p>
                                 </div>
                                 <div class="img-project-kolita">
@@ -109,6 +108,11 @@ export default {
         Sidebar,
         Footer,
         OurHappyClient
+    },
+    methods: {
+        gotoLivera : function () {
+            window.location.href = '/second-portfolio'
+        }
     }
 }
 </script>
@@ -236,6 +240,7 @@ export default {
 .line-service-wrapper {
     width: 1274px;
     display: flex;
+    padding-top: 20px;
 }
 .img-service {
     width: 100px;
@@ -319,37 +324,27 @@ export default {
 .scroll-project {
     overflow-x: scroll;
     margin-top: -150px;
-    width: 70%;
+    margin-left: 220px;
+    width: 60%;
     height: 80%;
 }
 
 .project-scroll-content {
-    width: 1284px;
+    width: 140%;
     height: auto;
 }
 
 .our-project-content {
-    /* border: 2px solid red; */
     margin: 0px;
     top: 0px;
-    margin-left: 275px;
+    margin-left: 20px;
     width: 100%;
     height: 100%;
     display: flex;
 }
-
-/* .our-project-content > div > img {
-    width: auto;
-    height: auto;
-} */
-
-/* .our-project-content > div {
-    position: absolute;
-    top: 100px;
-} */
-
 .img-project-livera {
     margin-left: 0px;
+    cursor: pointer;
 }
 
 .img-project-kolita {
@@ -378,28 +373,32 @@ export default {
     height: 12%;
 }
 
-@media (min-width: 200px) and (max-width: 600px) {
+@media (min-width: 200px) and (max-width: 960px) {
     .main-menu-bar, .mid-wrapper, .mid-service, .project-menu {
         left: 0px;
     }
     .main-container > h2{
-        text-align: left;
-        margin: 10px;
+        /* border: 2px solid red; */
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+        /* margin: 10px; */
         font-size: 18px;
-        margin-bottom: 15%;
+        /* margin-bottom: 15%; */
     }
     .main-content > h2 {
+        /* border: 2px solid red; */
         text-align: center;
         font-size: 20px;
         line-height: 30px;
         margin: 0px;
         margin-left: 10%;
-        width: 250px;
+        width: 32%;
     }
     .learn-more {
         width: 145px;
         height: 45px;
-        margin-left: 130px;
+        margin-left: 140px;
     }
     .text-learn-more {
         font-size: 18px;
@@ -440,10 +439,10 @@ export default {
         margin-left: -20px;
     }   
     .content-projects {
-        margin-left: 115px;
+        margin-left: 120px;
     }
     .content-clients {
-        margin-left: 250px;
+        margin-left: 260px;
     }
     /*-------------------- SERVICE WRAPPER-------------------- */
 
@@ -470,7 +469,7 @@ export default {
         width: 100%;
     }
     .mid-icon-content {
-        margin-left: -80px;
+        margin-left: -75px;
         width: 415px;
         height: 135%;
         display: grid;
@@ -526,34 +525,45 @@ export default {
 
     .line-project {
         width: 300px;
-        margin: -150px 0px 0px -30px;
+        margin: -140px 0px 0px -30px;
     }
 
     .img-project-livera, .img-project-kolita, .img-project-wvi {
-        margin-left: -130px;
         padding: 0px;
         left: 0px;
     }
-
+    .scroll-project {
+        margin-top: -200px;
+        margin-left: 120px;
+        width: 100%;
+        height: 75%;
+    }
     .our-project-content {
-        display: list-item;
+        display: block;
         width: 100%;
         height: 100%;
     }
 
     .img-project-livera > img{
-        width: 15%;
+        width: 10%;
+    }
+    .img-project-kolita {
+        margin-left: 0px;
     }
     .img-project-kolita > img {
-        width: 15%;
+        margin-left: 0px;
+        width: 10%;
+    }
+    .img-project-wvi {
+        margin-left: 0px;
     }
     .img-project-wvi > img {
-        width: 15%;
+        width: 10%;
     }
 
     .txt-project {
-        font-size: 20px;
-        margin-top: -10px;
+        font-size: 15px;
+        margin-bottom: 70px;
     }
 }
 
