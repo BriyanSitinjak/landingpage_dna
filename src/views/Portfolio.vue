@@ -512,7 +512,6 @@ export default {
 
     /*--------------------PREV NEXT CONTENT-------------------- */
     .prev-next-content {
-        /* position: relative; */
         left: 0px;
         width: 600px;
     }
@@ -526,13 +525,13 @@ export default {
 
     /*--------------------PREV BUTTON CONTENT-------------------- */
     .prev-prev-button {
-        width:75%;
+        width:70%;
     }
 
     .prev-button {
-        width: 220px;
-        height: 120px;
-        margin-top: 25px;
+        width: 100%;
+        height: auto;
+        margin-top: 60px;
     }
 
     .title-prev {
@@ -564,14 +563,14 @@ export default {
     /*--------------------NEXT BUTTON CONTENT-------------------- */
     .next-next-button {
         display: flex;
-        left: -75px;
+        left: -90px;
         width: 75%;
     }
     
     .next-button {
-        width: 220px;
-        height: 120px;
-        margin-top: 25px;
+        width: 100%;
+        height: auto;
+        margin-top: 60px;
     }
 
     .title-next {

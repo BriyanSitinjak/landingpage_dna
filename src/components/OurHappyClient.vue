@@ -11,9 +11,9 @@
                         <img v-on:click="gotoLivera" src="../assets/images/logo_livera.png">
                         <img src="../assets/images/logo_wvi.png">
                         <img v-on:click="gotoAtmajaya" src="../assets/images/logo_atmajaya.png">
-                        <img v-on:click="gotoLivera" src="../assets/images/logo_livera.png">
+                        <!-- <img v-on:click="gotoLivera" src="../assets/images/logo_livera.png">
                         <img src="../assets/images/logo_wvi.png">
-                        <img v-on:click="gotoAtmajaya" src="../assets/images/logo_atmajaya.png">
+                        <img v-on:click="gotoAtmajaya" src="../assets/images/logo_atmajaya.png"> -->
                         <!-- <v-row>
                             <v-col v-for="(n, i) in sourceImages" :key="i">
                                 <v-img :src="`${n}`"></v-img>
@@ -22,10 +22,10 @@
                     </div>
                 </div>
             </div>
-            <div class="img-arrow-two">
+            <!-- <div class="img-arrow-two">
                 <img src="../assets/logo/icon_back_02.png">
                 <img src="../assets/logo/icon_next_02.png">
-            </div>
+            </div> -->
         </div>
     </div>
 </template>
@@ -84,7 +84,7 @@ export default {
 
 .logo-client {
     position: relative;
-    width: 1800px;
+    width: 1300px;
     height: 150px;
 }
 
@@ -94,7 +94,7 @@ export default {
 
 .logo-client > div.logo-size-client > img {
     margin-top: 10px;
-    padding-right: 20px;
+    padding-right: 125px;
 }
 
 .logo-size-client {
@@ -112,7 +112,7 @@ export default {
     margin-left: 996px;
 }
 
-@media (min-width: 200px) and (max-width: 600px) {
+@media (min-width: 200px) and (max-width: 960px) {
     .client-menu {
         left: 0px;
         height: 280px;
@@ -134,7 +134,6 @@ export default {
     .logo-scroll-client {
         height: 125px;
         overflow-x: scroll;
-        /* border: 2px solid red; */
     }
     .img-arrow-two {
         display: none;

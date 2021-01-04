@@ -488,6 +488,7 @@ export default {
     /*--------------------ATMAJAYA PORTFOLIO ABOUT-------------------- */
     .testimonial-content {
         margin-bottom: 30px;
+        margin-left: 10px;
     }
     .title-testimonial-description > h2 {
         margin-left: 10px;
@@ -525,13 +526,13 @@ export default {
 
     /*--------------------PREV BUTTON CONTENT-------------------- */
     .prev-prev-button {
-        width:75%;
+        width:70%;
     }
 
     .prev-button {
-        width: 220px;
-        height: 120px;
-        margin-top: 25px;
+        width: 100%;
+        height: auto;
+        margin-top: 60px;
     }
 
     .title-prev {
@@ -561,14 +562,14 @@ export default {
     /*--------------------NEXT BUTTON CONTENT-------------------- */
     .next-next-button {
         display: flex;
-        left: -75px;
+        left: -90px;
         width: 75%;
     }
     
     .next-button {
-        width: 220px;
-        height: 120px;
-        margin-top: 25px;
+        width: 100%;
+        height: auto;
+        margin-top: 60px;
     }
 
     .title-next {

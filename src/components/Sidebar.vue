@@ -16,45 +16,46 @@
                         </v-navigation-drawer>
                     </v-card>
                 </v-content>
-                <img v-on:click="gotoLinkedin" class="logo logo-linkedin" src="../assets/logo/logo_linkedin.png" alt="LinkedIn">
-                <img v-on:click="gotoFacebook" class="logo logo-facebook" src="../assets/logo/logo_facebook.png" alt="Facebook">
-                <img v-on:click="gotoInstagram" class="logo logo-instagram" src="../assets/logo/logo_instagram.png" alt="Instagram">
+                <img v-on:click="gotoLinkedin" class="logo" src="../assets/logo/logo_linkedin.png">
+                <img v-on:click="gotoFacebook" class="logo" src="../assets/logo/logo_facebook.png">
+                <img v-on:click="gotoInstagram" class="logo" src="../assets/logo/logo_instagram.png">
             </div>
         </div>
         <div class="nav-bar">
-            <div class="nav-bar-wrapper">
-                <v-toolbar dark id="navbar">
-                    <v-app-bar-nav-icon x-small class="navbar-sidebar" @click="sidebar = !sidebar"></v-app-bar-nav-icon>
-                    <v-navigation-drawer app dark absolute temporary v-model="sidebar">
-                        <v-list nav width="100%" height="1000px">
-                            <v-list-item v-for="(item, i) in menuItems" exact :key="i" :to="item.path">{{item.title}}</v-list-item>
-                            <div class="navbar-logo-wrapper">
-                                <div class="navbar-logo linkedin-content">
-                                    <v-img
-                                    src="../assets/logo/logo_linkedin.png"
-                                    width="100%" 
-                                    v-on:click="gotoLinkedin"
-                                    ></v-img>
-                                </div>
-                                <div class="navbar-logo facebook-content">
-                                    <v-img
-                                    src="../assets/logo/logo_facebook.png"
-                                    width="100%"
-                                    v-on:click="gotoFacebook"
-                                    ></v-img>
-                                </div>
-                                <div class="navbar-logo instagram-content">
-                                    <v-img
-                                    src="../assets/logo/logo_instagram.png"
-                                    width="100%"
-                                    v-on:click="gotoInstagram"
-                                    ></v-img>
-                                </div>
+            <v-toolbar id="navbar">
+                <v-app-bar-nav-icon x-small @click="sidebar = !sidebar"></v-app-bar-nav-icon>
+                <div class="title-toolbar">
+                    <img v-on:click="gotoHome" src="../assets/logo/logo_dna.png">
+                </div>
+                <v-navigation-drawer app dark absolute temporary v-model="sidebar">
+                    <v-list nav width="100%" height="100%">
+                        <v-list-item v-for="(item, i) in menuItems" exact :key="i" :to="item.path">{{item.title}}</v-list-item>
+                        <div class="navbar-logo-wrapper">
+                            <div class="navbar-logo linkedin-content">
+                                <v-img
+                                src="../assets/logo/logo_linkedin.png"
+                                width="100%" 
+                                v-on:click="gotoLinkedin"
+                                ></v-img>
                             </div>
-                        </v-list>
-                    </v-navigation-drawer>
-                </v-toolbar>
-            </div>
+                            <div class="navbar-logo facebook-content">
+                                <v-img
+                                src="../assets/logo/logo_facebook.png"
+                                width="100%"
+                                v-on:click="gotoFacebook"
+                                ></v-img>
+                            </div>
+                            <div class="navbar-logo instagram-content">
+                                <v-img
+                                src="../assets/logo/logo_instagram.png"
+                                width="100%"
+                                v-on:click="gotoInstagram"
+                                ></v-img>
+                            </div>
+                        </div>
+                    </v-list>
+                </v-navigation-drawer>
+            </v-toolbar>
         </div>
     </v-container>
 </template>
@@ -106,18 +107,19 @@ export default {
     position: fixed;
     height: 100%;
     z-index: 1;
-    padding-right: 10px;
     overflow: auto;
 }
 
 .logo-dna {
-    margin-top: 8px;
+    margin: 5px;
     width: 70px;
     height: 70px;
 }
 
 .logo-frame {
-    margin: 150px 0px 130px 25px;
+    margin: 30px;
+    margin-top: 150px;
+    margin-bottom: 110px;
     cursor: pointer;
 }
 
@@ -125,13 +127,12 @@ export default {
     width: 30px;
     height: 30px;
     display: list-item;
-    margin: 20px 0px 0px 20px;
+    margin: 25px;
 }
 
 .logo , .logo-dna{
     cursor: pointer;
 }
-
 .full-navbar {
     position: relative;
     width: 80% !important;
@@ -161,25 +162,31 @@ export default {
 }
 
 @media (min-width: 200px) and (max-width: 600px) {
-    #navbar {
-        z-index: -1;
-    }
-
     .sidebar-fixed {
         display: none;
     }
+
+
+    #navbar {
+        z-index: 1;
+        background: linear-gradient(124.11deg, rgba(110, 42, 169, 0.8) 27.4%, rgba(255, 255, 255, 0) 102.33%), linear-gradient(108.51deg, rgba(110, 42, 169, 0.5) 0.81%, rgba(94, 44, 176, 0.5) 32.12%, rgba(112, 42, 168, 0.5) 40.81%, rgba(110, 42, 169, 0.5) 50.65%, rgba(121, 40, 164, 0.5) 63.06%, rgba(147, 37, 152, 0.5) 77.15%);
+        width: 100%;
+        height: 100%;
+    }
     .nav-bar {
-        position: relative;
         font-family: 'Roboto';
         display: inherit;
     }
-    .nav-bar-wrapper {
-        position: relative;
-        height:100%;
+    .title-toolbar {
+        width: 100%;
+        height: 100%;
     }
-    .router-link { 
-        text-decoration: none;
-        color:  #5E2CB0;
+    .title-toolbar > img {
+        width: 13%;
+        margin-top: 5px;
+        height: auto;
+        float: right;
+        cursor: pointer;
     }
     .navbar-logo-wrapper {
         float: left;
@@ -190,10 +197,6 @@ export default {
         float: left;
         padding: 20px;
         cursor: pointer;
-    }
-
-    .navbar-sidebar {
-        height: 10px;
     }
 }
 </style>

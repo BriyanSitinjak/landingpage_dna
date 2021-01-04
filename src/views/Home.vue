@@ -16,8 +16,8 @@
                 </div>
             </div>
             <div class="mid-wrapper">
-                <div class="mid-content-wrapper">
-                    <v-row>
+                <v-content class="mid-content-wrapper">
+                    <v-row dense no-gutters>
                         <v-col class="mid content-years">
                             <p class="txt-number">2</p>
                             <p class="txt-content">Year of Experience</p>
@@ -31,31 +31,33 @@
                             <p class="txt-content">Happy Clients</p>
                         </v-col>
                     </v-row>
-                </div>
+                </v-content>
             </div>
             <div class="mid-service">
                 <div class="mid-service-wrapper">
                     <div class="service-wrapper">
                         <p class="txt-service"> Service That We Can Provide</p>
                     </div>
-                    <img class="img-service" src="../assets/images/line.png" alt="Line">
+                    <div class="line-service-wrapper">
+                        <img class="img-service" src="../assets/images/line.png" alt="Line">
+                    </div>
                     <div class="mid-icon">
                         <div class="mid-icon-content">
                             <div class="ui-ux-images">
                                 <div class="icon img-ui">
-                                    <img src="../assets/images/uiux_dev.png" alt="UIUX">
+                                    <img src="../assets/images/uiux_dev.png">
                                 </div>
                                 <p class="text txt-ui">UI/UX Design</p>
                             </div>
                             <div class="web-images">
                                 <div class="icon img-web">
-                                    <img src="../assets/images/website_dev.png" alt="Website">
+                                    <img src="../assets/images/website_dev.png">
                                 </div>
                                 <p class="text txt-web">Website Development</p>
                             </div>
                             <div class="mobile-images">
                                 <div class="icon img-mobile">
-                                    <img src="../assets/images/mobile_dev.png" alt="Mobile">
+                                    <img src="../assets/images/mobile_dev.png">
                                 </div>
                                 <p class="text txt-mobile">Mobile Apps Development</p>
                             </div>
@@ -175,18 +177,10 @@ export default {
 
 /*-------------------- MIDDLE WRAPPER-------------------- */
 .mid-wrapper {
-    position: relative;
-    left: 70px;
-    width: 1824px;
+    margin-left: 70px;
+    width: 1284px;
     height: 220px;
     background: #f4f3f3;
-}
-
-.mid {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 50px 0px 0px 70px;
 }
 
 .mid-content-wrapper {
@@ -194,9 +188,12 @@ export default {
     height: 100%;
 }
 
-.mid-content-wrapper > v-row > v-col {
-    margin: auto;
+.mid {
+    margin-top: 60px;
+    margin-left: 10px;
     text-align: center;
+    width: 100%;
+    height: 100%;
 }
 
 .txt-content {
@@ -204,40 +201,20 @@ export default {
     color: #000000;
 }
 
-.content-years {
-    margin-left: 135px;
-}
-
-.content-projects {
-    margin-left: 545px;
-}
-
-.content-clients {
-    margin-left: 980px;
-}
-
 .txt-number {
     font-weight: 500;
     font-size: 50px;
-    line-height: 75px;
-    margin-left: 55px;
     color: #5E2CB0;
-}
-.content-projects > p.txt-number {
-    margin-left: 53px;
-}
-
-.content-clients > p.txt-number {
-    margin-left: 43px;
 }
 
 
 /*-------------------- SERVICE WRAPPER-------------------- */
 .mid-service {
     position: relative;
-    width: 1824px;
+    width: 1274px;
     height: 600px;
-    left: 70px;
+    padding-top: 80px;
+    margin-left: 80px;
     background: #ffffff;
 }
 
@@ -248,36 +225,32 @@ export default {
     margin: auto;
 }
 
-.service-wrapper {
-    width: 100%;
-    margin-top: 80px;
-}
-
 .txt-service {
     font-size: 28px;
     margin: auto;
     width: 100%;
-    margin-left: 10px;
-    padding-left: 490px;
+    text-align: center;
     color: #5B2CB2;
 }
-
+.line-service-wrapper {
+    width: 1274px;
+    display: flex;
+}
 .img-service {
-    position: relative;
-    margin-left: 640px;
     width: 100px;
+    margin: auto;
 }
 
 .mid-icon {
-    position: relative;
-    width: 1368px;
+    width: 1274px;
     height: 360px;
-    margin: auto;
+    margin-top: 30px;
 }
 
 .mid-icon-content {
     height: 100%;
     width: 100%;
+    margin-left: 170px;
 }
 
 .icon {
@@ -287,7 +260,7 @@ export default {
 
 .text {
     position: absolute;
-    margin: 250px 250px 0px -25px;
+    margin-top: 250px;
     font-size: 26px;
     font-weight: bold;
     text-align: center;
@@ -295,16 +268,17 @@ export default {
 }
 
 .txt-ui{
-    width: 175px;
+    width: 150px;
+    margin-left: -5px;
 }
 
 .txt-web {
-    left: 350px;
+    left: 490px;
     width: 300px;
 }
 
 .txt-mobile {
-    left: 740px;
+    left: 875px;
     width: 300px;
 }
 
@@ -385,7 +359,7 @@ export default {
 }
 
 .img-arrow {
-    position: absolute;
+    position: relative;
     display: flex;
     margin: 100px 0px 0px 1100px;
     width: 12%;
@@ -422,6 +396,11 @@ export default {
         margin-top: -2px;
     }
     /*-------------------- MIDDLE WRAPPER-------------------- */
+    .mid-wrapper {
+        margin-left: 0px;
+        padding-top: 10px;
+    }
+
     .mid {
         padding: 0px;
         margin: 0px;
@@ -433,7 +412,6 @@ export default {
     .mid-content-wrapper {
         width: 100%;
         height: 100%;
-        margin-left: 0px;
     }
     .txt-number {
         font-size: 30px;
@@ -446,77 +424,86 @@ export default {
         text-align: center;
         margin-left: 50px;
     }
-    .content-clients > p.txt-content {
-        margin-left: 65px;
-    }
-    .content-projects > p.txt-number {
-        margin-left: 27px;
-    }
-    .content-clients > p.txt-number {
-        padding-left: 13px;
-    }
     .content-years{
         margin-left: -20px;
     }   
     .content-projects {
-        margin-left: 125px;
+        margin-left: 115px;
     }
     .content-clients {
-        margin-left: 270px;
+        margin-left: 250px;
     }
     /*-------------------- SERVICE WRAPPER-------------------- */
 
+    .line-service-wrapper {
+        margin-left: -80px;
+        width: 415px;
+    }
+
     .service-wrapper {
-        margin-left:-530px;
+        width:415px;
+        margin-left: -80px;
         margin-top: 50px;
-        padding-left: 100px;
     }
     .txt-service {
         font-size: 20px;
     }
+
     .icon {
         margin-top: 150px;
         width: 150%;
         margin-left: 100px;
     }
     .icon > img {
-        width: 85%;
+        width: 100%;
     }
     .mid-icon-content {
-        width: 80%;
-        height:80%;
+        margin-left: -80px;
+        width: 415px;
+        height: 135%;
+        display: grid;
     }
     .ui-ux-images {
-        margin-left: -210px;
-        top: 0px;
+        margin-left: 55px;
+        margin-top: -150px;
+        margin-bottom: -1000px;
+    }
+    .web-images {
+        margin-left: 55px;
+        margin-top: 20px;
+    }
+    .mobile-images {
+        margin-top: -120px;
+        margin-left: 55px;
     }
     .img-ui {
-        margin-left: 5px;
         width: 100px;
-        height: 100px;
     }
     .img-web {
-        margin-left: -210px;
         width: 100px;
-        height: 100px;
     }
     .img-mobile {
-        margin-left: -200px;
         width: 100px;
-        height: 100px;
     }
     .txt-ui{
-        margin-left: -45px;
+        margin-left: 70px;
+        margin-top: 260px;
         font-size: 12px;
     }
     .txt-web {
-        margin-left: -425px;
+        margin-left: 74px;
+        margin-top: 260px;
+        padding: 0px;
+        left: 0px;
         font-size: 12px;
         width:8%;
     }
     .txt-mobile {
         font-size: 12px;
-        margin-left: -668px;
+        margin-left: 70px;
+        margin-top: 260px;
+        padding: 0px;
+        left: 0px;
         width: 8%;
     }
     /*-------------------- OUR PROJECT WRAPPER-------------------- */

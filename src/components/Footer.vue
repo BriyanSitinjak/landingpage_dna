@@ -1,6 +1,6 @@
 <template>
     <v-container fluid class="menu-footer"> 
-        <v-row class="row-footer"> 
+        <v-row dense no-gutters class="row-footer"> 
             <v-col cols="12" sm="12" md="7" lg="7" xl="7" 
             class="footer-one">
                 <div class="first-footer-one">
@@ -84,6 +84,8 @@ export default {
     line-height: 16px;
     padding: 0;
     color: #FFFFFF;
+    /* border: 2px solid red; */
+    margin-left: 65px;
 }
 
 .footer-one > div {
@@ -106,7 +108,7 @@ export default {
 .third-footer-one {
     width: 375px;
     font-size: 14px;
-    text-align: left;
+    text-align: justify;
 }
 
 /*--------------------ROW2COL2 WRAPPER-------------------- */
@@ -115,6 +117,8 @@ export default {
     font-size: 18px;
     line-height: 21px;
     margin-top: 95px;
+    margin-left: -30px;
+    /* border: 2px solid red; */
 }
 
 .first-footer-two > h5 {
@@ -142,6 +146,8 @@ export default {
     font-size: 16px;
     font-weight: 500;
     line-height: 21px;
+    margin-left: -30px;
+    /* border: 2px solid red; */
 }
 
 .first-footer-three > h5 {
@@ -216,7 +222,7 @@ export default {
         position: absolute;
         width: 100%;
         height: auto;
-        margin-left: -39px;
+        margin-left: -50px;
     }
     .first-footer-one > p {
         text-align: center;
@@ -231,7 +237,7 @@ export default {
         position: absolute;
         width: 100%;
         height: 235px;
-        margin-left: -38px;
+        margin-left: -50px;
         margin-top: 400px;
         border-top: 4px solid white;
     }
@@ -253,12 +259,13 @@ export default {
         width: 100%;
         height: auto;
         margin-top: 635px;
-        margin-left: -38px;
+        margin-left: -50px;
         border-top: 4px solid white;
     }
     .first-footer-three {
         margin: auto;
         text-align: center;
+
     }
     .first-footer-three > h5 {
         font-size: 18px;
@@ -270,29 +277,31 @@ export default {
     .content-map-section {
         margin: auto;
         text-align: center;
-        margin-bottom: 32px;
-    }
-    .content-map-section > p {
-        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 35px;
     }
     .icon-footer { 
         margin: auto;
         margin-left: -13px;
+    }
+    .icon-map {
+        margin-top: -10px;
     }
     .mail-linkedin-facebook-section {
         width: 100%;
         padding-top: 8px;
     }
     .mail-linkedin-facebook-section > div > img {
-        margin-top: -20px;
+        margin-top: -28px;
     }
     .mail-section, .facebook-section, .linkedin-section {
         margin: auto;
+        margin-top: 5px;
     }
     .content-last-footer-section {
         width: 100%;
         margin: auto;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
     }
     .copyright-section {
         display: none;
