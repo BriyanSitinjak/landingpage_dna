@@ -67,30 +67,31 @@
             </div>
             <div class="project-menu">
                 <div class="project-menu-wrapper">
+                    <div class="title-project-menu"></div>
                     <p>Our Project</p>
                     <div class="line-project"></div>
                     <div class="scroll-project">
                         <div class="project-scroll-content">
                             <div class="our-project-content">
                                 <div class="img-project-livera">
-                                    <img src="../assets/images/livera_box.png" alt="Livera">
+                                    <img src="../assets/images/livera_box.png">
                                     <p class="txt-project">C-PRO</p>
                                 </div>
                                 <div class="img-project-kolita">
-                                    <img src="../assets/images/box_default.png" alt="Kolita">
+                                    <img src="../assets/images/box_default.png">
                                     <p class="txt-project">Atmajaya (KOLITA)</p>
                                 </div>
                                 <div class="img-project-wvi">
-                                    <img src="../assets/images/box_default.png" alt="Binbank">
+                                    <img src="../assets/images/box_default.png">
                                     <p class="txt-project">Binbank (WVI)</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="img-arrow">
+                    <!-- <div class="img-arrow">
                         <img v-on:click="back" src="../assets/logo/icon_back.png" alt="Back">
                         <img v-on:click="next" src="../assets/logo/icon_next.png" alt="Next">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         <OurHappyClient />
@@ -315,37 +316,48 @@ export default {
     transform: rotate(90deg);
 }
 
+.scroll-project {
+    overflow-x: scroll;
+    margin-top: -150px;
+    width: 70%;
+    height: 80%;
+}
+
 .project-scroll-content {
-    width: 1800px;
-    height: 100px;
-}
-
-.our-project-content {
-    width: 100px;
-    height: 265px;
-    float: left;
-}
-
-.our-project-content > div > img {
-    width: auto;
+    width: 1284px;
     height: auto;
 }
 
-.our-project-content > div {
-    position: absolute;
-    top: 100px;
+.our-project-content {
+    /* border: 2px solid red; */
+    margin: 0px;
+    top: 0px;
+    margin-left: 275px;
+    width: 100%;
+    height: 100%;
+    display: flex;
 }
 
+/* .our-project-content > div > img {
+    width: auto;
+    height: auto;
+} */
+
+/* .our-project-content > div {
+    position: absolute;
+    top: 100px;
+} */
+
 .img-project-livera {
-    margin-left: 250px;
+    margin-left: 0px;
 }
 
 .img-project-kolita {
-    margin-left: 730px;
+    margin-left: 80px;
 }
 
 .img-project-wvi {
-    margin-left: 1210px;
+    margin-left: 80px;
 }
 
 .txt-project {
@@ -443,7 +455,7 @@ export default {
     .service-wrapper {
         width:415px;
         margin-left: -80px;
-        margin-top: 50px;
+        margin-top: -60px;
     }
     .txt-service {
         font-size: 20px;
@@ -518,22 +530,25 @@ export default {
     }
 
     .img-project-livera, .img-project-kolita, .img-project-wvi {
-        margin-left: 170px;
+        margin-left: -130px;
+        padding: 0px;
+        left: 0px;
     }
 
-    .our-project-content > div > img {
-        width: 50%;
-        height: 50%;
+    .our-project-content {
+        display: list-item;
+        width: 100%;
+        height: 100%;
     }
 
-    .img-project-livera {
-        margin-top: -90px;
+    .img-project-livera > img{
+        width: 15%;
     }
-    .img-project-kolita {
-        margin-top: 90px;
+    .img-project-kolita > img {
+        width: 15%;
     }
-    .img-project-wvi {
-        margin-top: 270px;
+    .img-project-wvi > img {
+        width: 15%;
     }
 
     .txt-project {

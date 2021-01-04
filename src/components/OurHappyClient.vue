@@ -11,9 +11,9 @@
                         <img v-on:click="gotoLivera" src="../assets/images/logo_livera.png">
                         <img src="../assets/images/logo_wvi.png">
                         <img v-on:click="gotoAtmajaya" src="../assets/images/logo_atmajaya.png">
-                        <!-- <img v-on:click="gotoLivera" src="../assets/images/logo_livera.png">
+                        <img v-on:click="gotoLivera" src="../assets/images/logo_livera.png">
                         <img src="../assets/images/logo_wvi.png">
-                        <img v-on:click="gotoAtmajaya" src="../assets/images/logo_atmajaya.png"> -->
+                        <img v-on:click="gotoAtmajaya" src="../assets/images/logo_atmajaya.png">
                         <!-- <v-row>
                             <v-col v-for="(n, i) in sourceImages" :key="i">
                                 <v-img :src="`${n}`"></v-img>
@@ -57,7 +57,6 @@ export default {
     position: relative;
     width: 1400px;
     height: 370px;
-    left: 70px;
 }
 
 .client-menu-wrapper {
@@ -76,7 +75,7 @@ export default {
 
 .line-client {
     position: absolute;
-    width: 900px;
+    width: 1000px;
     margin-top: -13px;
     left:275px;
     border: 1px solid #805CBA;
@@ -84,7 +83,7 @@ export default {
 
 .logo-client {
     position: relative;
-    width: 1300px;
+    width: 128px;
     height: 150px;
 }
 
@@ -98,9 +97,9 @@ export default {
 }
 
 .logo-size-client {
-    width: 100%;
-    height: 100%;
-    float: left;
+    width: 75%;
+    height: 75%;
+    display: flex;
 }
 
 .img-arrow-two {
@@ -127,12 +126,12 @@ export default {
         width: 500px;
     }
     .logo-size-client {
-        width: 100%;
+        width: 100px;
         height: 68%;
         display: flex;
     }
     .logo-scroll-client {
-        height: 125px;
+        height: 100%;
         overflow-x: scroll;
     }
     .img-arrow-two {

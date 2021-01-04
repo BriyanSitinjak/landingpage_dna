@@ -85,7 +85,7 @@ export default {
     padding: 0;
     color: #FFFFFF;
     /* border: 2px solid red; */
-    margin-left: 65px;
+    margin-left: 55px;
 }
 
 .footer-one > div {
