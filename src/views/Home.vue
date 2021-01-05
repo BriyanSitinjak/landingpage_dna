@@ -182,7 +182,7 @@ export default {
 
 /*-------------------- MIDDLE WRAPPER-------------------- */
 .mid-wrapper {
-    margin-left: 70px;
+    margin-left: 80px;
     width: 1284px;
     height: 220px;
     background: #f4f3f3;
@@ -216,7 +216,7 @@ export default {
 /*-------------------- SERVICE WRAPPER-------------------- */
 .mid-service {
     position: relative;
-    width: 1274px;
+    width: 1284px;
     height: 600px;
     padding-top: 80px;
     margin-left: 80px;
@@ -238,7 +238,7 @@ export default {
     color: #5B2CB2;
 }
 .line-service-wrapper {
-    width: 1274px;
+    width: 1284px;
     display: flex;
     padding-top: 20px;
 }
@@ -291,9 +291,9 @@ export default {
 /*-------------------- PROJECT WRAPPER-------------------- */
 .project-menu {
     position: relative;
-    width: 1824px;
+    width: 1284px;
     height: 540px;
-    left: 70px;
+    left: 80px;
     background-color: #5B2CB2;
 }
 
@@ -324,8 +324,8 @@ export default {
 .scroll-project {
     overflow-x: scroll;
     margin-top: -150px;
-    margin-left: 220px;
-    width: 60%;
+    margin-left: 280px;
+    width: 70%;
     height: 80%;
 }
 
@@ -378,16 +378,13 @@ export default {
         left: 0px;
     }
     .main-container > h2{
-        /* border: 2px solid red; */
         text-align: center;
+        margin-bottom: 40px;
         width: 100%;
         margin-left: 0;
-        /* margin: 10px; */
         font-size: 18px;
-        /* margin-bottom: 15%; */
     }
     .main-content > h2 {
-        /* border: 2px solid red; */
         text-align: center;
         font-size: 20px;
         line-height: 30px;

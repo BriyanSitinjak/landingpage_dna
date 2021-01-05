@@ -149,7 +149,7 @@ export default {
 .portfolio-container {
     font-family: 'Roboto';
     position: relative;
-    left: 70px;
+    left: 80px;
 }
 
 .mid-portfolio {
@@ -198,14 +198,14 @@ export default {
 }
 /*--------------------DESCRIPTION CONTENT ABOUT-------------------- */
 .description-content {
-    width: 1608px;
+    width: 1284px;
     height: 200px;
 }
 
 .description-content-portfolio {
     width: 100%;
     height: 100%;
-    margin: 75px 400px 0px 0px;
+    margin: 75px 0px 0px 40px;
 }
 
 .title-description > h2 {
@@ -239,14 +239,14 @@ export default {
 }
 
 .atmajaya-content-portfolio {
-    margin: 0px 140px 0px 80px;
+    margin: 0px 140px 0px 120px;
 }
 
 /*--------------------TESTIMONIAL CONTENT-------------------- */
 .testimonial-content {
-    width: 1608px;
+    width: 1284px;
     height: 200px;
-    margin: 80px 0px 0px 0px;
+    margin: 80px 0px 0px 40px;
 }
 
 .testimonial-content-portfolio {
@@ -315,7 +315,6 @@ export default {
 
 .prev-next-wrapper {
     position: absolute;
-    margin-left: 10px;
     width: 100%;
     height: 100%;
 }
@@ -412,7 +411,7 @@ export default {
     transform: rotate(180deg);
 }
 
-@media (min-width: 200px) and (max-width: 600px) {
+@media (min-width: 200px) and (max-width: 960px) {
     .portfolio-container {
         left: 0px;
     }
@@ -451,7 +450,8 @@ export default {
         display: none;
     }
     .description-content-portfolio {
-        width: 25.5%;
+        margin-left: 0px;
+        width: 32%;
     }
     .title-description > h2 {
         font-size: 14px;
@@ -465,13 +465,12 @@ export default {
         margin: 0px;
     }
     .content-description > p {
-        width: 41.5%;
+        width: 43%;
         text-align: justify;
-        margin:0px;
-        margin-left: 0px;
-        font-size: 8px;
+        font-size: 9px;
         line-height: 13px;
         padding: 0px 10px;
+        margin:0px;
     }
 
 
@@ -486,6 +485,8 @@ export default {
 
     /*--------------------ATMAJAYA PORTFOLIO ABOUT-------------------- */
     .testimonial-content {
+        width: 100%;
+        margin-left: 25px;
         margin-bottom: 30px;
     }
     .title-testimonial-description > h2 {
@@ -501,9 +502,9 @@ export default {
     }
     .content-testimonial {
         margin-left: 100px;
-        margin-top: -349px;
-        width: 20%;
-        font-size: 8px;
+        margin-top: -378px;
+        width: 75%;
+        font-size: 9px;
     }
     .content-testimonial > p {
         margin-left: 25px;

@@ -39,7 +39,7 @@ export default {
     width: 825px;
     top: 0px;
     margin-top: 150px;
-    margin-left: 90px;
+    margin-left: 123px;
 }
 
 @media (min-width: 200px) and (max-width: 600px) {

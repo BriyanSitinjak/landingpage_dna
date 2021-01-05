@@ -55,15 +55,16 @@ export default {
 .client-menu {
     font-family: 'Roboto';
     position: relative;
-    width: 1400px;
+    width: 1284px;
     height: 370px;
+    margin-left: 80px;
+
 }
 
 .client-menu-wrapper {
     width: 100%;
     height: 100%;
     padding-top: 80px;
-    margin-left: 100px;
 }
 
 .title-client > p {
@@ -97,8 +98,8 @@ export default {
 }
 
 .logo-size-client {
-    width: 75%;
-    height: 75%;
+    width: 70%;
+    height: 70%;
     display: flex;
 }
 
@@ -113,7 +114,7 @@ export default {
 
 @media (min-width: 200px) and (max-width: 960px) {
     .client-menu {
-        left: 0px;
+        margin-left: 0px;
         height: 280px;
     }
 
@@ -131,7 +132,7 @@ export default {
         display: flex;
     }
     .logo-scroll-client {
-        height: 100%;
+        height: 70%;
         overflow-x: scroll;
     }
     .img-arrow-two {

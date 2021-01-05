@@ -80,7 +80,7 @@ export default {
     position: relative;
     width: 100%;
     height: 100%;
-    left: 70px;
+    left: 80px;
 }
 
 .main-service-container {
@@ -97,7 +97,7 @@ export default {
 /*-------------------- MIDDLE SERVICE WRAPPER-------------------- */
 .how-we-work {
     position: relative;
-    width: 1824px;
+    width: 1284px;
     height: 851px;
     background: #805CBA;
 }
@@ -232,7 +232,7 @@ export default {
         margin-top: 10px;
         border: 2px solid #FFFFFF;
         margin: 0px;
-        margin-left: 105px;
+        margin-left: 135px;
         width: 50%;
         transform: rotate(180deg);
     }
@@ -258,12 +258,12 @@ export default {
     }
     .third-mid-service {
         margin-left: 300px;
-        margin-top: 175px;
+        margin-top: 185px;
     }
     .side-logo-service {
         margin: 0px;
         display: list-item;
-        margin-bottom: 156px;
+        margin-bottom: 177px;
         width: 18%;
         height: auto;
     }

@@ -35,7 +35,7 @@ export default {
     background-image: url('../assets/images/footer_home.png');
     left: 70px;
     height: 400px;
-    width: 1824px;
+    width: 1294px;
 }
 
 .img-before-footer{
@@ -65,6 +65,7 @@ export default {
     width: 200px;
     height: 60px;
     border-radius: 25px;
+    cursor: pointer;
 }
 
 .btn-before-content > a {

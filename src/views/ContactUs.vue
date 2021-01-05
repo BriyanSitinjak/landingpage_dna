@@ -72,7 +72,7 @@ export default {
 .contact-us {
     font-family: 'Roboto';
     position: relative;
-    left: 70px;
+    left: 80px;
 }
 
 .contact-us-content {
@@ -82,19 +82,21 @@ export default {
 }
 
 .contact-us-title {
-    margin: 150px 0px 0px 85px;
+    /* border: 2px solid red; */
+    margin: 150px 0px 0px 120px;
     font-size: 22px;
 }
 
-.contact-us-title > h2 {
+.contact-us-title > h2 , .contact-us-title > h1 {
     font-weight: normal;
+    margin: 0px;
 }
 
 /*-------------------- TEXTAREA CONTACT US WRAPPER-------------------- */
 .contact-us-wrapper {
     position: absolute;
-    margin-top: -90px;
-    margin-left: 800px;
+    margin-top: -70px;
+    margin-left: 760px;
     width: 145%;
     height: 100%;
 }
@@ -116,6 +118,7 @@ export default {
     font-style: italic;
     font-size: 12px;
     padding-bottom: 50px;
+    color: #C4C4C4;
 }
 
 .textarea >>> label {
@@ -139,7 +142,7 @@ export default {
 .learn-more {
     width: 200px;
     height: 60px;
-    margin: 25px 0px 0px 210px;
+    margin: 25px 0px 0px 260px;
     border-radius: 25px;
 }
 
@@ -152,7 +155,7 @@ export default {
 }
 
 
-@media (min-width: 200px) and (max-width: 600px) {
+@media (min-width: 200px) and (max-width: 960px) {
     .contact-us {
         left: 0px;
     }
@@ -161,9 +164,11 @@ export default {
         font-size: 12px;
     }
     .contact-us-wrapper {
+        /* border: 2px solid red; */
         margin-left: 275px;
         width: 70%;
         height: 80%;
+        margin-top: -85px;
     }
     .text-field >>> label {
         font-size: 12px;
@@ -199,7 +204,7 @@ export default {
     .text-learn-more {
         font-size: 10px;
         padding: 0px;
-        margin-top: -12px;
+        margin-top: -10px;
         margin-left: 40px;
     }
 }

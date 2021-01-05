@@ -120,13 +120,13 @@ export default {
 /*--------------------HOME ABOUT-------------------- */
 .about-container {
     position: relative;
-    left: 70px;
+    left: 80px;
     font-family: 'Roboto';
 }
 
 .main-about-wrapper {
     position: relative;
-    width: 100%;
+    width: 1284px;
     height: 100%;
 }
 
@@ -147,7 +147,9 @@ export default {
 
 .about-header-wrapper {
     width: 210px;
-    margin: 150px 175px 0px auto;
+    margin-top: 150px;
+    margin-right: 90px;
+    float: right;
 }
 
 .about-header-wrapper > h2 {
@@ -167,9 +169,8 @@ export default {
 
 /*--------------------MIDDLE ABOUT-------------------- */
 .mid-about {
-    /* border: 5px solid red; */
     position: relative;
-    width: 1824px;
+    width: 1284px;
     height: 340px;
 }
 
@@ -181,7 +182,7 @@ export default {
 
 .content-mid-about {
     position: absolute;
-    width: 1345px;
+    width: 1284px;
     height: 312px;
     font-family: 'Caveat';
 }
@@ -207,9 +208,8 @@ export default {
 
 /*--------------------STORY ABOUT-------------------- */
 .story-about {
-    /* border: 5px solid red; */
     position: relative;
-    width: 1824px;
+    width: 1284px;
     height: 400px;
     background-color: #5B2CB2;;
 }
@@ -224,7 +224,7 @@ export default {
     position: absolute;
     color: #ffffff;
     font-size: 34px;
-    margin: 240px 0px 0px 90px;
+    margin: 240px 0px 0px 120px;
     width: 300px;
 }
 
@@ -240,16 +240,16 @@ export default {
     position: absolute;
     font-size: 17px;
     color: #FFFFFF;
-    width: 40%;
+    width: 55%;
     height: 300px;
     text-align: justify;
-    margin: 70px 30px 0px 480px;
+    margin: 70px 0px 0px 482px;
 }
 
 /*--------------------TEAM ABOUT-------------------- */
 .team-about {
     position: relative;
-    width: 1824px;
+    width: 1284px;
     height: auto;
     padding-top: 80px;
 }
@@ -263,7 +263,7 @@ export default {
     color: #5E2CB0;
     font-size: 34px;
     font-weight: bold;
-    margin: 0px 0px 25px 95px;
+    margin: 0px 0px 25px 120px;
 }
 
 .line-team-about {
@@ -301,7 +301,7 @@ export default {
 .content-join-us  {
     position: absolute;
     top: 0;
-    margin: 70px 0px 0px 100px ;
+    margin: 70px 0px 0px 120px ;
 }
 
 .text-join-us {
@@ -349,29 +349,24 @@ export default {
 
 
 
-@media (min-width: 200px) and (max-width: 600px) {
+@media (min-width: 200px) and (max-width: 960px) {
     .about-container {
         left: 0px;
     }
-    .about-header-wrapper > h2 {
-        font-size: 20px;
-        width: 110%;
-        height: 30%;
-        margin-top: -150px;
-        margin-left: 150px;
-    }
-    .about-header-wrapper > p{
-        font-size: 10px;
-        width: 70%;
-        margin-left: 190px;
-        margin-top: -22px;
+    .about-header-wrapper {
+        position: absolute;
+        height: 100%;
+        margin: 0;
+        padding: 20px;
+        width: 32.5%;
+        background: linear-gradient(269.88deg, #5E2CB0 -2.79%, #5E2CB0 33.97%, rgba(94, 44, 176, 0) 99.87%);
     }
     /*--------------------MIDDLE ABOUT-------------------- */
     .content-mid-about > h4 {
         margin-top: 140px;
         margin-left: 0px;
         font-size: 20px;
-        width: 30%;
+        width: 32.5%;
     }
     .content-mid-about > p {
         margin-top: -25px;
@@ -383,25 +378,26 @@ export default {
     /*--------------------OUR STORY  ABOUT-------------------- */
     .content-about-bigtext > h2 {
         text-align: center;
-        width: 10%;
+        width: 32.5%;
         font-size: 20px;
         margin: 0px;
-        margin-left: 115px;
+        margin-left: 0px;
         margin-top: 5px;
     }
     .line-about-wrapper {
         margin: 0px;
-        margin-top: 60px;
-        margin-left: 15px;
+        margin-top: 40px;
+        margin-left: 23px;
         width:370px;
         border: 2px solid #ffffff;
         transform: rotate(180deg);
     }
     .content-about-childtext > p {
-        margin-left: 20px;
-        margin-top: 75px;
-        font-size: 12px;
-        width: 20%;
+        margin-left: 0px;
+        margin-top: 60px;
+        font-size: 13px;
+        padding: 15px;
+        width: 32.5%;
     }
 
     /*--------------------OUR TEAM ABOUT-------------------- */
@@ -421,47 +417,54 @@ export default {
         width: 225px;
     }
     .first-img-about {
-        width: 22%;
+        width: 32.5%;
         height: 22%;
     }
     .second-img-about {
-        width: 22%;
+        width: 32.5%;
         height: 100%;
     }
     .second-img-team {
         margin-left: 0px;
         width: 100%;
-        height: 135px;
+        height: 140px;
     }
 
     /*--------------------JOIN US ABOUT-------------------- */
     .content-join-us {
+        text-align: center;
         margin: 0px;
-        margin: 2px;
+        width: 100%;
     }
     .text-join-us > h4 {
         font-size: 15px;
     }
     .text-join-us > p {
+        width: 50%;
+        margin-left: 25%;
         font-size: 15px;
     }
     .content-btn-join-us {
-        width: 70%;
+        margin-left: 10%;
+        width: 100%;
     }
     .content-btn-join-us > a {
         position: relative;
         font-size: 16px;
-        width: 80%;
-        height: 80%;
+        margin-left: 15%;
+        width: 50%;
+        height: 100%;
     }
     .join-us {
         padding-bottom: 15px;
         color: #5E2CB0;
     }
+    .join-us > span {
+        margin-left: -25px;
+        
+    }
     .content-btn-join-us > img {
-        width: 13%;
-        margin-top: 20px;
-        margin-left: 100px;
+        display: none;
     }
 }
 </style>

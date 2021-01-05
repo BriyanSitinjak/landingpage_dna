@@ -72,7 +72,7 @@ export default {
     font-family: 'Roboto';
     background-image: url('../assets/images/footer_home.png');
     background-repeat: no-repeat;
-    width: 1824px;
+    width: 1294px;
     height: 480px;
     margin-left: 70px;
     padding-left: 50px;
